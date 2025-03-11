@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="public/css/separate.css">
     <link rel="stylesheet" href="public/css/header.css"> 
     <link rel="stylesheet" href="public/css/elementorSpacer.css">
-    <!-- js  -->
-    <script src="public/js/mainJS.js"></script>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- js  -->
+    <script src="public/js/mainJS.js"></script>
+    <script src="public/js/animation.js"></script>
+    <script src="public/js/header.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -31,32 +33,33 @@
         </div>
         
         <ul id="menu" class="header-content">
-        <!-- <ul id="side-menu" class="header-content"> -->
-            <li class="subnemu highlight-submenu">
+        
+            <!-- <li class="subnemu highlight-submenu"> -->
+            <li class="subnemu">
                 <a href="#home">
                     <span class="long-show-header">home</span>
                     <span class="short-show-header">hm</span>
                 </a>
             </li>
-            <li class="subnemu ">    
+            <li class="subnemu">    
                 <a href="#about">
                     <span class="long-show-header">about</span>
                     <span class="short-show-header">abt</span>
                 </a>
             </li>
-            <li class="subnemu ">
+            <li class="subnemu">
                 <a href="#skills">
                     <span class="long-show-header">skills</span>
                     <span class="short-show-header">sk</span>
                 </a>
             </li>
-            <li class="subnemu ">
+            <li class="subnemu">
                 <a href="#projects">
                     <span class="long-show-header">projects</span>
                     <span class="short-show-header">prj</span>
                 </a>    
             </li>
-            <li class="subnemu ">
+            <li class="subnemu">
                 <a href="#experience">
                     <span class="long-show-header">experience</span>
                     <span class="short-show-header">exp</span>
@@ -102,7 +105,7 @@
                     <div class="job_drow11 hightlight-job-color"></div>
                 </div>
 
-                <p id="description" class="des text-des">No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.</p>
+                <p id="description" class="des text-des">I'm a passionate developer who loves solving complex problems and turning ideas into reality. With expertise in multiple programming languages and a strong focus on innovation, I strive to build efficient and scalable solutions that make an impact.</p>
 
                 <div class="follow-container">
                     <p class="des text-des">Follow Me</p>
@@ -160,6 +163,8 @@
                         </svg>
                     </a>
                 </div>
+
+                <h1>My Web Portfolio is updating...</h1>
             </div>
             <div class="avatar-container">
                 <div class="dot-pattern"></div>
@@ -168,12 +173,15 @@
                 </div>
             </div>
         </div>
+
+        
     </section>
 
+    <!-- about -->
+    <script src="public/js/data/about.js"></script>
     <section id="about" class="section">
         <div class="elementor-spacer-inner-background">
             <div class="elementor-spacer-inner space1"></div>
-            <!-- <div class="elementor-spacer-inner space2"></div> -->
         </div>
 
         <h1 class="title-section">about</h1>
@@ -205,27 +213,17 @@
             <h3 class="info-title">educate</h3>
             <ul class="info-content">
                 <li>Good Student Certificates (Grade 1-12), </li>
-                <li>GPA: 3.x</li>
+                <li>GPA: <span id="gpa">3.x</span></li>
             </ul>
         </div>
         <div class="about-achie">
             <div class="about-achie-head">
-                <div class="about-achie-box">
-                    <h3 class="about-achie-box-title">awards</h3>
-                    <h1 id="about-awards" class="about-achie-box-content">12</h1>
-                </div>
-                <div class="about-achie-box">
-                    <h3 class="about-achie-box-title">xp years</h3>
-                    <h1 id="about-xpyears" class="about-achie-box-content">1+</h1>
-                </div>
-                <div class="about-achie-box">
-                    <h3 class="about-achie-box-title">projects</h3>
-                    <h1 id="about-projects" class="about-achie-box-content">10</h1>
-                </div>
+                <!-- 
                 <div class="about-achie-box">
                     <h3 class="about-achie-box-title">N/a</h3>
-                    <h1 id="about-na" class="about-achie-box-content">N/a</h1>
-                </div>
+                    <h1 class="about-achie-box-content">N/a</h1>
+                </div> 
+                -->
             </div>
             <div class="about-achie-body">
                 <div class="about-chie-des-title">
@@ -243,6 +241,8 @@
         </div>  
     </section>
 
+    <!-- skills -->
+    <script src="public/js/data/skills.js"></script>
     <section id="skills" class="section">
         <div class="elementor-spacer-inner-background">
             <div class="elementor-spacer-inner space2"></div>
@@ -254,7 +254,8 @@
             <div class="head-box-skill">
                 <div>programming language</div>
             </div>
-            <div class="body-box-skill body-box-skill-2col">
+            <div class="body-box-skill body-box-skill-2col" id="programming-language">
+                <!-- 
                 <div class="detail-box-skill">
                     <span class="percent-nonslider-skill">75</span>
                     <div class="content-box-skill">
@@ -263,67 +264,8 @@
                             <div class="nonslider-skill-detail"></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">75</span>
-                    <div class="content-box-skill">
-                        <span class="name-detail-box-skill">html, css</span>
-                        <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">75</span>
-                    <div class="content-box-skill">
-                        <span class="name-detail-box-skill">php</span>
-                        <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">75</span>
-                    <div class="content-box-skill">
-                        <span class="name-detail-box-skill">python</span>
-                        <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">75</span>
-                    <div class="content-box-skill">
-                        <span class="name-detail-box-skill">java</span>
-                        <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">75</span>
-                    <div class="content-box-skill">
-                        <span class="name-detail-box-skill">sql</span>
-                        <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">75</span>
-                    <div class="content-box-skill">
-                        <span class="name-detail-box-skill">C# With Unity</span>
-                        <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail"></div>
-                        </div>
-                    </div>
-                </div>
+                </div> 
+                -->
             </div>
         </div>
 
@@ -332,7 +274,8 @@
                 <div class="head-box-skill">
                     <div>soft skill</div>
                 </div>
-                <div class="body-box-skill">
+                <div class="body-box-skill" id="soft-skill">
+                    <!-- 
                     <div class="detail-box-skill">
                         <span class="percent-nonslider-skill">75</span>
                         <div class="content-box-skill">
@@ -341,73 +284,39 @@
                                 <div class="nonslider-skill-detail"></div>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="detail-box-skill">
-                        <span class="percent-nonslider-skill">75</span>
-                        <div class="content-box-skill">
-                            <span class="name-detail-box-skill">flexibility</span>
-                            <div class="nonslider-skill">
-                                <div class="nonslider-skill-detail"></div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="detail-box-skill">
-                        <span class="percent-nonslider-skill">75</span>
-                        <div class="content-box-skill">
-                            <span class="name-detail-box-skill">communication</span>
-                            <div class="nonslider-skill">
-                                <div class="nonslider-skill-detail"></div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
+                    -->
                 </div>
             </div>
 
             <div class="box-skill-2th">
                 <div class="head-box-skill">
-                    <div>soft skill</div>
+                    <div>hard skill</div>
                 </div>
-                <div class="body-box-skill">
+                <div class="body-box-skill" id="hard-skill">
+                    <!-- 
                     <div class="detail-box-skill">
                         <span class="percent-nonslider-skill">75</span>
                         <div class="content-box-skill">
-                            <span class="name-detail-box-skill">creativity</span>
+                            <span class="name-detail-box-skill">Programming & Scripting</span>
                             <div class="nonslider-skill">
                                 <div class="nonslider-skill-detail"></div>
                             </div>
                         </div>
-                    </div>
-    
-                    <div class="detail-box-skill">
-                        <span class="percent-nonslider-skill">75</span>
-                        <div class="content-box-skill">
-                            <span class="name-detail-box-skill">flexibility</span>
-                            <div class="nonslider-skill">
-                                <div class="nonslider-skill-detail"></div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="detail-box-skill">
-                        <span class="percent-nonslider-skill">75</span>
-                        <div class="content-box-skill">
-                            <span class="name-detail-box-skill">communication</span>
-                            <div class="nonslider-skill">
-                                <div class="nonslider-skill-detail"></div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
+                    -->
                 </div>
             </div>
         </div>
-
-        
-
     </section>
 
+    <!-- projects -->
+    <script src="public/js/data/projects.js"></script>
     <section id="projects" class="section">
+        <div class="elementor-spacer-inner-background">
+            <div class="elementor-spacer-inner space-box-1"></div>
+        </div> 
+
         <h1 class="title-section">projects</h1>
         <div class="box-project">
             <div class="detail-box-project">
@@ -421,7 +330,9 @@
                     <p class="des-content-box-project">
                         Mauris volutpat estera phasellus varius nec orci, quam augue se loremes lines pellentesque non
                     </p>
-                    <a href="#" class="viewmore-content-box-project ani-hover">view more</a>
+                    <div>
+                        <a href="#" class="viewmore-content-box-project ani-hover">view more</a>
+                    </div>
                 </div>
             </div>
 
@@ -472,7 +383,13 @@
         </div>
     </section>
 
+    <!-- experience -->
+    <script src="public/js/data/experience.js"></script>
     <section id="experience" class="section">
+        <div class="elementor-spacer-inner-background">
+            <div class="elementor-spacer-inner space3"></div>
+        </div>
+
         <h1 class="title-section">exp.</h1>
         <div class="box-exp">
             <div class="detail-box-exp">
@@ -538,6 +455,8 @@
         </div>
     </section>
 
+    <!-- contact -->
+    <script src="public/js/data/contact.js"></script>
     <section id="contact" class="section">
         <h1 class="title-section">contact</h1>
         <div class="box-contact">
@@ -634,9 +553,9 @@
             </span>
         </p>
         <p>
-            <span class="hightlight-footer">99%</span>
+            <span class="hightlight-footer">95%</span>
             <span>hand-crafted</span>,
-            <span class="hightlight-footer">1%</span>
+            <span class="hightlight-footer">5%</span>
             <span>AI-assisted</span>.
         </p>
         <p>

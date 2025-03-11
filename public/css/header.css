@@ -58,6 +58,7 @@
     
         .subnemu{
             padding: 10px 10px;
+            position: relative;
         }
 
         .subnemu:hover a{
@@ -99,11 +100,7 @@
             bottom: 5px;
         } */
 
-        .highlight-submenu {
-            position: relative;
-        }
-
-        .highlight-submenu::after {
+        .subnemu::after {
             content: "";
             position: absolute;
             left: 4px;
@@ -114,34 +111,19 @@
             height: 4px;
             border-radius: 20px;
             background-color: rgb(255, 196, 0);
-            transform: scaleX(1);
-            /* animation: transform_ep 0.5s linear, 
-                stop_ep 1s step-end 0.5s, 
-                transform_ep 0.5s reverse linear 1.5s;
-            animation-iteration-count: infinite; */
-            transition: transform 0.3s;
+            transform: scaleX(0);
+            transition: transform 0.6s;
         }
 
-        /* @keyframes transform_ep {
-            from {
-                width: 0%;
-            }
-            to {
-                width: 100%;
-            }
+        .highlight-submenu {
+            position: relative;
         }
 
-        @keyframes stop_ep {
-            0%, 100% {
-                width: 100%;
-                background-color: red;
-            }
-        } */
-
-        /* .highlight-submenu:hover::after {
+        .highlight-submenu::after {
+            /* right: 4px; */
             transform: scaleX(1);
-        } */
-        
+        }
+
             
 @media screen and (max-width: 900px) {
     .menu-bar {
