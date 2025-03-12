@@ -7,12 +7,14 @@ function loadSection(idSection, time) {
     }, time); // 600 ms
 }
     
-
-
 $(document).ready(function() {
     var $listA = $("#menu").find("a");
 
-    loadSection("#home", 400);
+    // loadSection("#home", 400);
+    // setTimeout(() => {
+    //     $("#skills").find(".nonslider-skill-detail").addClass("start-nonslider");
+    //     console.log("add");
+    // }, 400);
 
     $listA.on("click", function () {
         // console.log("clicked");

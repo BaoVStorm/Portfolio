@@ -776,6 +776,8 @@ body {
         .content-box-exp {
             display: flex;
             position: relative;
+            width: 100%;
+            min-height: 164px;
         }      
 
             .block-content-box-exp{
@@ -784,6 +786,11 @@ body {
                 flex-direction: column;
             }
             
+                .block-content-box-exp .description {
+                    margin-bottom: 0px;
+                    margin-top: 20px;
+                }
+
                 .name-company-box-exp {
                     font-weight: 500;
                     display: flex;
@@ -1058,6 +1065,13 @@ body {
                         gap: 12px;
                         align-items: center;
                     }
+
+                        div.body-content-contact a{
+                            color: rgb(61, 61, 61);
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
+                        }
 
                         div.body-content-contact i{
                             font-size: 32px;

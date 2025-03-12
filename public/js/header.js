@@ -36,8 +36,8 @@ function hightLight_Header() {
             if(list_submenu[idSubmenu] != null) {
                 list_submenu[idSubmenu].addClass(nameClassHL);
 
-                if(idSubmenu == "home")
-                    console.log("add");
+                // if(idSubmenu == "home")
+                //     console.log("add");
 
                 last_submenu = list_submenu[idSubmenu];
             }

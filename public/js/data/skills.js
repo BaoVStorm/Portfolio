@@ -65,15 +65,12 @@ function loadSkillSection () {
         }
     }
 }
-let check_animation_skill = true
 
 $(document).ready(function() {
     loadSkillSection();
 });
 
-function loadAnimation() {
-    var $skill = $("#skills");
-
+function loadAnimation($skill) {
     // Lấy vị trí của phần tử so với đầu trang
     let position = $skill.offset().top;
 
@@ -84,17 +81,17 @@ function loadAnimation() {
     let scrollTop = $(window).scrollTop();
 
     if(position < scrollTop + screenHeight - 250) {
-        check_animation_skill = false
         $skill.find(".nonslider-skill-detail").removeClass("start-nonslider");
     }
 }
 
 $(document).ready(function () {
-    loadAnimation();
+    var $skill = $("#skills");
+    loadAnimation($skill);
 
     $(window).on("scroll", function () {
-        if(check_animation_skill) {
-            loadAnimation();
+        if($skill.find(".nonslider-skill-detail").hasClass("start-nonslider")) {
+            loadAnimation($skill);
         }
     });
 });
