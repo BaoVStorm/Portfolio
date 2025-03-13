@@ -30,20 +30,45 @@ body {
     position: relative;
 }
 
+.text-hello {
+    font-family: "Courgette", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: "Rowdies", sans-serif;
+    font-weight: 100 !important;
+    font-style: italic;
+    /* font-size: 65px !important; */
+
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic; */
+}
+
 .text-intro {
     font-family: "Courgette", serif;
     font-weight: 400;
     font-style: normal;
 
-    /* font-family: "Rowdies", serif;
-    font-weight:lighter;
-    font-style: normal; */
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic; */
 }
 
 .text-des {
-    font-family: "Courgette", serif;
+    /* font-family: "Courgette", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; */
+
+    /* font-family: "Rowdies", serif;
+    font-weight:lighter;
+    font-style: normal; */
+
+    font-family: "Poppins", serif;
 }
 
     #name {
@@ -105,13 +130,20 @@ body {
 
             #introduce-text .hi {
                 font-size: 30px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                color: #47474786;
             }
 
             #introduce-text .intro {
-                font-weight: bold;
-                font-size: 65px;
+                /* font-weight: bold; */
+                font-size: 50px;
+                color: #4b4b4b;
             }
+
+                #introduce-text .intro span{
+                    /* font-weight: bold; */
+                    font-size: 60px;
+                }
 
                 #job {
                     color: var(--text-job);
@@ -133,13 +165,13 @@ body {
             }
 
             #description {
-                margin-bottom: 35px !important;
+                margin-bottom: 20px !important;
             }
 
             #introduce-text .des {
                 /* font-weight: bold; */
-                font-size: 23px;
-                color: rgb(98, 98, 98);
+                font-size: 20px;
+                color: rgb(80, 80, 80);
                 /* color: color-mix(in srgb, var(--main-color) 50%, rgb(250, 250, 250) 50%); */
             }
             
@@ -153,7 +185,7 @@ body {
                 }
 
                 .follow-container .element-icon {
-                    width: 85px;
+                    width: 80px;
                     /* height: 50px; */
                     aspect-ratio: 1 / 1;
                     margin-left: 5px;

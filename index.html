@@ -78,12 +78,14 @@
         <i class="fa-solid fa-bars"></i>
     </div>
 
+    <!-- home -->
+    <script src="public/js/data/home.js"></script>
     <section id="home">
         <div id="head-decorate">
         </div>
         <div id="head-content">
             <div id="introduce-text">
-                <p class="hi text-intro"> Hello </p>
+                <p class="hi text-hello fa-bounce" style="--fa-animation-duration: 1s;"> <span class="fa-beat">Hello !</span> </p>
                 <p class="intro text-intro"> I'm 
                     <span id="name">Tran Vu Bao</span>.
                 </p>
@@ -169,7 +171,7 @@
             <div class="avatar-container">
                 <div class="dot-pattern"></div>
                 <div id="introduce-avatar">
-                    <img src="assets/origin-avatar.jpg" alt="avatar">
+                    <img src="assets/images/avatar.jpeg" onerror="this.onerror=null; this.src='assets/images/origin-avatar.jpg';" alt="avatar">
                 </div>
             </div>
         </div>
@@ -233,7 +235,7 @@
                     <p id="about-des-content">description content</p>
                 </div>
                 
-                <a id="button-downloadcv" href="#">
+                <a id="button-downloadcv" href="#" target="_blank">
                     Download My CV
                     <i class="fa-solid fa-download"></i>
                 </a>

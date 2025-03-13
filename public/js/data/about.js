@@ -1,7 +1,7 @@
 let list_achie = [
     {
         name: "awards",
-        value: 12
+        value: 19
     },
     {
         name: "xp years",
@@ -13,7 +13,7 @@ let list_achie = [
     },
     {
         name: "gpa",
-        value: "3.57"
+        value: "3.6x"
     }
 ];
 
@@ -23,7 +23,7 @@ let title_about = {
 };
 
 
-let url_cv = "https://www.youtube.com";
+let url_cv = "https://drive.google.com/file/d/1r6y_HA7CEfGvXZrtEGg5j2vPDdVZyWIo/view?usp=sharing";
 
 $(document).ready(function() {
     var $box = $("#about .about-achie .about-achie-head");
