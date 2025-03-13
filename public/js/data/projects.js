@@ -2,9 +2,9 @@ var url_img = "assets/images/";
 
 list_projects = [
     {
-        "img": "https://demo.cocobasic.com/fabius-wp/demo-1/wp-content/uploads/2020/11/portfolio_item_1.jpg",
-        "title": "InversionAttack",
-        "des": "...",
+        "img": "https://img.freepik.com/free-vector/virtual-currency-flat-style-banners-set_1284-15605.jpg",
+        "title": "Inversion Attack",
+        "des": "Inversion Attack is an attack technique in the field of security and machine learning, aimed at reconstructing the original data from the output or weights of an AI model.",
         "href": "https://github.com/BaoVStorm/InversionAttack"
     },
     {

@@ -658,6 +658,8 @@ body {
                     height: 100%;
                     position: absolute;
                     transition: transform 0.25s ease-in-out;
+                    object-fit: cover;
+                    object-position: center;
                 }
 
                 .image-box-project:hover img{
