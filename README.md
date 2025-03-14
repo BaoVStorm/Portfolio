@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/dd43c581-9d9d-4639-ad5b-5b9551f7b9b5)
 
+![welcome](https://github.com/user-attachments/assets/5ec8996c-991e-4497-a785-a7b950a27589)
 
 # 🌟 Giới Thiệu
 
@@ -15,14 +15,23 @@ Chào mừng bạn đến với trang web giới thiệu bản thân của tôi!
 ## 📌 Mô Tả
 Trang web này được xây dựng nhằm mục đích giới thiệu về bản thân, trình bày kỹ năng và chia sẻ các dự án cá nhân. 
 
-![Portfolio Preview](https://via.placeholder.com/800x400 "Giao diện trang web")
+<img width="500" alt="3918927"  src="https://github.com/user-attachments/assets/dfcbef73-53d5-44e7-bf85-f8978d1c09d6" />
+
+## ABOUT
+![image](https://github.com/user-attachments/assets/373188a2-2ee6-453a-8280-341855b3ea62)
+
+## SKILL
+![image](https://github.com/user-attachments/assets/cdcd445e-3a3c-4527-8d3d-3f79fbe3e779)
+
+## AND MORE..
+![image](https://github.com/user-attachments/assets/4dd06a81-f3da-4bda-b21d-f1a3c20fc767)
+
 
 ## 📬 Liên Hệ
 Bạn có thể kết nối với tôi qua các nền tảng sau:
 
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-- 🔗 GitHub: [github.com/yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
+- 📧 Email: [tranvubao2004@gmail.com](mailto:tranvubao2004@gmail.com)
+- 🔗 GitHub: [https://github.com/BaoVStorm](https://github.com/BaoVStorm)
 
 ---
 ✨ Cảm ơn bạn đã ghé thăm! Hy vọng bạn sẽ thích trang web này. 😃
