@@ -47,6 +47,15 @@
         left: 12%;
     }
 
+        #logo-header {
+            height: 45px;
+        }
+            #logo-header img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
     #menu {
         margin: 0px;
         display: flex;
