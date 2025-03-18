@@ -36,7 +36,7 @@ $(document).ready(function() {
         var html = `
             <div class="about-achie-box">
                 <h3 class="about-achie-box-title">${name}</h3>
-                <h1 class="about-achie-box-content">${value}</h1>
+                <h1 class="about-achie-box-content light">${value}</h1>
             </div>
         `;
 

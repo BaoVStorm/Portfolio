@@ -34,11 +34,11 @@ function loadSkillSection () {
 
             var $con_skill = $(`
                 <div class="detail-box-skill">
-                    <span class="percent-nonslider-skill">${percent}</span>
+                    <span class="percent-nonslider-skill light">${percent}</span>
                     <div class="content-box-skill">
-                        <span class="name-detail-box-skill">${detail_skill}</span>
+                        <span class="name-detail-box-skill text-main">${detail_skill}</span>
                         <div class="nonslider-skill">
-                            <div class="nonslider-skill-detail start-nonslider"></div>
+                            <div class="nonslider-skill-detail start-nonslider light"></div>
                         </div>
                     </div>
                 </div>

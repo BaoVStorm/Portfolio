@@ -56,7 +56,7 @@ $(document).ready(function() {
                 <a href="${project["href"]}" class="image-box-project" target="_blank">
                     <img src="${project["img"]}" alt="image">
                 </a>
-                <div class="content-box-project">
+                <div class="content-box-project text-main light">
                     <h1 class="title-content-box-project">
                         ${project["title"]}
                     </h1>   
@@ -64,7 +64,7 @@ $(document).ready(function() {
                         ${project["des"]}
                     </p>
                     <div>
-                        <a href="${project["href"]}" class="viewmore-content-box-project ani-hover" target="_blank">view more</a>
+                        <a href="${project["href"]}" class="viewmore-content-box-project ani-hover text-main light" target="_blank">view more</a>
                     </div>
                 </div>
             </div>`;

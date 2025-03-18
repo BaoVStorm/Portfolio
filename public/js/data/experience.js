@@ -26,7 +26,7 @@ $(document).ready(function() {
         var exp = list_exp[i];
 
         var html = `
-            <div class="detail-box-exp">
+            <div class="detail-box-exp text-main light">
                 <div class="time-detail-box-exp">
                     <div class="spe-box-exp">
                         <div class="spe1-exp spe-exp"></div> <h1 class="from-time-detail-box-exp">

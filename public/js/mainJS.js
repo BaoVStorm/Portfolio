@@ -40,24 +40,32 @@ $(document).ready(function(){
         changeTheme();
     });
 
-    
-
-    
-
-    
 });
 
 var arr_theme = [
-    "body"
+    "body",
+    "#name",
+    ".dot-pattern",
+    ".hi",
+    ".text-main",
+    ".background-main",
+    ".avatar-container",
+    "#introduce-avatar",
+    ".about-achie-box-content",
+    ".percent-nonslider-skill",
+    ".nonslider-skill-detail"
 ];
+
+$(document).ready(function(){
+    arr_theme.forEach(obj => {
+        $(obj).css("transition", "color 0.5s, background-color 0.5s, border-color 0.5s");
+        $(obj).addClass("light");
+    });
+});
 
 function changeTheme() {
     arr_theme.forEach(obj => {
         console.log(obj);
-
-        // transition: top 0.5s, background-color 0.5s;
-
-        $(obj).css("transition", "color 0.5s, background-color 0.5s");
 
         $(obj).toggleClass("light");
         $(obj).toggleClass("dark");
