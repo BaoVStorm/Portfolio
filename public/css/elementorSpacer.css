@@ -25,6 +25,10 @@
         height: 1200px;
         top: 20px;
         left: 60%;
+        position: relative;
+
+        /* border-style:dashed;
+        animation: spin 15s linear infinite; */
     }
 
     .space2 {
@@ -39,6 +43,8 @@
         top:0%;
         right: 55%;
         border-width: 2px;
+
+        /* animation: r; */
     }
 
     .space-box-1 {
@@ -49,3 +55,9 @@
         border-width: 4px;
         transform: rotate(45deg);
     }
+
+/* animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

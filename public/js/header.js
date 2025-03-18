@@ -68,25 +68,5 @@ $(document).ready(function(){
         // console.log("click menu bar");
         
         $header.toggleClass("close-header");
-        // if($header.hasClass("close-header")) {
-        //     $header.removeClass("close-header");
-
-        //     $header.css("display", "flex");
-        // }
-        // else {
-        //     $header.addClass("close-header");
-            
-        //     $header.css("display", "none");
-        // }
-
-        // if($header.is("#close-header")) {
-        //     console.log("1");
-        //     $header.attr("id", "close-header");
-        // }
-        // else {
-        //     console.log("2");
-        //     $header.attr("id", "close-header");
-
-        // }
     });
 });

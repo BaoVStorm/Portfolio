@@ -22,3 +22,44 @@ $(document).ready(function() {
         loadSection(idSubmenu, 600);
     });
 });
+
+// --------------------- menu bar (dark light - bar)
+$(document).ready(function(){
+    var $darklightbar = $("#dark-light-bar");
+    var $header = $("#header");
+
+    $darklightbar.on("click", function() {
+        // console.log("click menu bar");
+        
+        $darklightbar.toggleClass("switch-light");
+        $darklightbar.toggleClass("switch-dark");
+
+        $darklightbar.find("#switch-bar").toggleClass("switch-light");
+        $darklightbar.find("#switch-bar").toggleClass("switch-dark");
+
+        changeTheme();
+    });
+
+    
+
+    
+
+    
+});
+
+var arr_theme = [
+    "body"
+];
+
+function changeTheme() {
+    arr_theme.forEach(obj => {
+        console.log(obj);
+
+        // transition: top 0.5s, background-color 0.5s;
+
+        $(obj).css("transition", "color 0.5s, background-color 0.5s");
+
+        $(obj).toggleClass("light");
+        $(obj).toggleClass("dark");
+    });
+}
