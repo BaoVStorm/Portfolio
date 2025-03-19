@@ -19,7 +19,7 @@ $(document).ready(function() {
     $listA.on("click", function () {
         // console.log("clicked");
         var idSubmenu = $(this).attr("href");
-        loadSection(idSubmenu, 600);
+        loadSection(idSubmenu, 500);
     });
 });
 
@@ -59,12 +59,16 @@ var arr_theme = [
     ".detail-box-project",
     ".box-contact",
     "#footer",
-    "#header"
+    "#header",
+    "#menu-bar"
 ];
 
 $(document).ready(function(){
     arr_theme.forEach(obj => {
-        $(obj).css("transition", "color 0.5s, background-color 0.5s, border-color 0.5s");
+        if(obj == "#header")
+            $(obj).css("transition", "color 0.5s, background-color 0.5s, border-color 0.5s, left 0.6s");
+        else
+            $(obj).css("transition", "color 0.5s, background-color 0.5s, border-color 0.5s");
         $(obj).addClass("light");
     });
 });

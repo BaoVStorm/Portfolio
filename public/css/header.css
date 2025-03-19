@@ -32,6 +32,12 @@
             text-shadow:
                 2.5px 2px var(--main-color);
         }
+            #menu-bar.light:hover {
+                text-shadow: 2.5px 2px var(--main-color);
+            }
+            #menu-bar.dark:hover {
+                text-shadow: 2.5px 2px var(--main-color-dark);
+            }
 
         /* #menu-bar.close-header {
             display: none !important;

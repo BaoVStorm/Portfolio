@@ -32,7 +32,7 @@ list_projects = [
     //     "href": "https://github.com/BaoVStorm/Olap"
     // },
     {
-        "img": "https://raw.githubusercontent.com/coconerd/LessIsMore_Tomato/refs/heads/VStorm/background.jpg?token=GHSAT0AAAAAAC476LCJKZKYONEAXVQLNPH6Z6VZY3Q",
+        "img": "https://raw.githubusercontent.com/coconerd/LessIsMore_Tomato/refs/heads/VStorm/background.jpg?token=GHSAT0AAAAAAC476LCJ7WHDAVSRTR24WYYKZ623PGQ",
         "title": "LessIsMore - DataMining",
         "des": "A team project with <i>COCONERD</i> — this project focused on data mining for tomato pest and disease recognition using the MobileNet model. This lightweight model delivers impressive performance.",
         "href": "https://github.com/coconerd/LessIsMore_Tomato"
