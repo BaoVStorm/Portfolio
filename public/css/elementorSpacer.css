@@ -1,5 +1,6 @@
 :root {
     --elementor-spacer-inner-color: rgb(233, 233, 233);
+    --elementor-spacer-inner-color-dark: rgb(48, 48, 48);
 }
 
 .elementor-spacer-inner-background {
@@ -16,10 +17,17 @@
         /* background-color: red; */
         aspect-ratio: 1 / 1;
         z-index: -3;
-        border: 3px var(--elementor-spacer-inner-color) solid;
+        /* border-color: var(--elementor-spacer-inner-color); */
+        border: 3px solid;
         border-radius: 50%;
         position: absolute;
     }
+        .elementor-spacer-inner.light {
+            border-color: var(--elementor-spacer-inner-color);
+        }
+        .elementor-spacer-inner.dark {
+            border-color: var(--elementor-spacer-inner-color-dark);
+        }
 
     .space1 {
         height: 1200px;
@@ -30,6 +38,12 @@
         /* border-style:dashed;
         animation: spin 15s linear infinite; */
     }
+        .space1.light {
+            border-color: rgb(240, 240, 240);
+        }
+        .space1.dark {
+            border-color: rgb(52, 52, 52);
+        }
 
     .space2 {
         height: 1000px;
@@ -41,11 +55,18 @@
     .space3 {
         height: 1600px;
         top:0%;
-        right: 55%;
+        right: 56%;
         border-width: 2px;
 
         /* animation: r; */
     }
+        .space3.light {
+            border-color: rgb(240, 240, 240);
+        }
+        .space3.dark {
+            border-color: rgb(52, 52, 52);
+        }
+
 
     .space-box-1 {
         border-radius: 0%;

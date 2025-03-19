@@ -53,7 +53,12 @@ var arr_theme = [
     "#introduce-avatar",
     ".about-achie-box-content",
     ".percent-nonslider-skill",
-    ".nonslider-skill-detail"
+    ".nonslider-skill-detail",
+    ".title-section",
+    ".elementor-spacer-inner",
+    ".detail-box-project",
+    ".box-contact",
+    "#footer"
 ];
 
 $(document).ready(function(){

@@ -52,7 +52,7 @@ $(document).ready(function() {
         var project = list_projects[i];
 
         var con_skill = `
-            <div class="detail-box-project">
+            <div class="detail-box-project light">
                 <a href="${project["href"]}" class="image-box-project" target="_blank">
                     <img src="${project["img"]}" alt="image">
                 </a>

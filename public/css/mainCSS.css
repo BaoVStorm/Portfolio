@@ -12,6 +12,9 @@
     --main-color: #fab410;
     --shadow-contact: #a0a0a0fb;
     --text-color: #4b4b4b;
+    --line-color: rgb(187, 187, 187);
+    --line-exp-color: rgb(133, 133, 133);
+    --line-contact: rgba(99, 99, 99, 0.466);
 
     --main-background-color: rgb(250, 250, 250);
 }
@@ -20,9 +23,12 @@
 :root {
     --text-job-dark: #b86ee0fb;
     --shadow-job-dark: #504e49fb;
-    --main-color-dark: #31ec3b;
+    --main-color-dark: #00c90a;
     --shadow-contact-dark: #a0a0a0fb;
-    --text-color-dark: #dfdfdf;
+    --text-color-dark: #dadada;
+    --line-color-dark: rgb(104, 104, 104);
+    --line-exp-color-dark: rgb(182, 181, 181);
+    --line-contact-dark: rgba(216, 216, 216, 0.527);
 
     --main-background-color-dark: rgb(58, 58, 58);
 }
@@ -33,14 +39,41 @@ body {
     padding: 0px;
     position: relative;
 }
-
     body.light {
         background-color: var(--main-background-color);
     }
+        
 
     body.dark {
         background-color: var(--main-background-color-dark);
+        transition: color 0.5s, background-color 0.5s, border-color 0.5s;
     }
+
+    body::-webkit-scrollbar {
+        width: 12px;
+        transition: background-color 0.5s;
+    }
+        body.light::-webkit-scrollbar {
+            background-color: #e7e7e7;
+        }
+        
+        body.dark::-webkit-scrollbar {
+            background-color: #2c2c2c;
+        }
+    
+    body::-webkit-scrollbar-thumb {
+        border-radius: 23px;
+        transition: background-color 0.5s;
+    }
+        body.light::-webkit-scrollbar-thumb {
+            /* background-color: color-mix(in srgb, var(--main-color) 10%, rgb(36, 36, 36) 90%); */
+            background-color: rgb(36, 36, 36,  0.767);
+
+        }
+        body.dark::-webkit-scrollbar-thumb {
+            /* background-color: color-mix(in srgb, var(--main-color-dark) 10%, rgb(228, 228, 228) 90%); */
+            background-color: rgba(228, 228, 228, 0.767);
+        }
 
 .text-main.light {
     color: var(--text-color) !important;
@@ -385,7 +418,6 @@ body {
 } */
     .title-section {
         position: absolute;
-        color: #e7e7e7;
         text-transform: uppercase;
         z-index: -1;
         top: var(--top-section);
@@ -394,6 +426,14 @@ body {
         writing-mode:sideways-lr;
         left: calc((100% - 1000px) * 0.2);
     }
+
+        .title-section.light {
+            color: #e2e2e2;
+        }
+
+        .title-section.dark {
+            color: #535353;
+        }
 
     @media screen and (max-width: 1100px){
         .title-section {
@@ -735,11 +775,18 @@ body {
     }
 
         .detail-box-project {
-            border-right: 2px rgb(187, 187, 187) solid;
+            /* border-right: 2px rgb(187, 187, 187) solid; */
             display: flex;
             width: 670px;
             height: 320px;
         }    
+            .detail-box-project.light {
+                border-right: 2px var(--line-color) solid;
+            }
+            .detail-box-project.dark {
+                border-right: 2px var(--line-color-dark) solid;
+    
+            }
 
             .image-box-project {
                 height: 100%;
@@ -827,7 +874,7 @@ body {
                         }
 
                         .ani-hover.dark::after {
-                            background-color: color-mix(in srgb, var(--main-color-dark) 50%, #444444 50%);
+                            background-color: color-mix(in srgb, var(--main-color-dark) 50%, #141414 50%);
                         }
 
                     .ani-hover:hover {
@@ -902,13 +949,28 @@ body {
                         height: 2px;
                         width: 100%;
                         position: absolute;
-                        background-color: #202020;
+                        /* background-color: #202020; */
                     }
+                        .detail-box-exp.light .spe-exp::after {
+                            background-color: var(--line-exp-color);
+                        }
+                        .detail-box-exp.dark .spe-exp::after {
+                            background-color: var(--line-exp-color-dark);
+                        }
 
                     .detail-box-exp:last-child {
                         padding-bottom: 22px;
-                        border-bottom: 2px #202020 solid;
+                        /* border-bottom: 2px #202020 solid; */
+                        border-bottom: 2px var(--line-exp-color) solid;
+                        transition: border-color 0.5s;
                     }
+                        .detail-box-exp.light:last-child {
+                            border-color: var(--line-exp-color);
+                        }
+                        .detail-box-exp.dark:last-child {
+                            border-color: var(--line-exp-color-dark);
+                        }
+
 
                 .spe1-exp {
                     flex-grow: 1;
@@ -973,14 +1035,20 @@ body {
         box-sizing: border-box;
     }
 
-    form.detail-box-contact{
+    .box-contact form.detail-box-contact{
         background-color: var(--main-color);
-        color: rgb(19, 19, 19);
         padding: 40px;
         position: relative;
         overflow: hidden;
+        transition: background-color 0.5s,;
     }    
-
+        .box-contact.light form.detail-box-contact {
+            background-color: var(--main-color);
+        }
+        .box-contact.dark form.detail-box-contact {
+            background-color: var(--main-color-dark);
+        }
+        
         .decorate-contact {
             position: absolute;
             top: -20px;
@@ -988,7 +1056,15 @@ body {
             font-size: 470px;
             color: #2020200c;
             /* z-index: -1; */
+            transition: color 0.5s;
         }
+            .box-contact.light .decorate-contact {
+                color: #2020200c;
+            }
+            .box-contact.dark .decorate-contact {
+                color: #ffffff1a;
+            }
+
 
             div.detail-box-contact .decorate-contact {
                 font-size: 295px;
@@ -1011,17 +1087,21 @@ body {
                 border-left: 2px rgb(99, 99, 99) solid;
                 padding-left: 5px;
                 color: #303030;
+
+                transition: color 0.5s, border-color 0.5s;
             } 
             
-                /* form.detail-box-contact label p::before {
-                    content: "";
-                    height: 2px;
-                    width: 20px;
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0px;
-                    background-color: rgb(80, 80, 80);
-                }  */
+                .box-contact.light form.detail-box-contact label p {
+                    border-color: color-mix(in srgb, var(--line-contact) 80%, rgba(255, 255, 255, 0.13) 20%);
+                    /* border-color: var(--line-contact); */
+                    color: #303030;
+                }
+                .box-contact.dark form.detail-box-contact label p {
+                    border-color: color-mix(in srgb, var(--line-contact-dark) 80%, rgba(0, 0, 0, 0.13) 20%);
+                    /* border-color: var(--line-contact-dark); */
+                    color: #e9e9e9;
+                }
+
 
         form.detail-box-contact input, form.detail-box-contact textarea{
             all: unset;
@@ -1031,21 +1111,41 @@ body {
             font-family: "Poppins", serif;
             font-size: var(--main-font-size);
             border-bottom: 2px rgb(99, 99, 99) solid;
+            transition: color 0.5s, border-color 0.5s;
         }
 
+            .box-contact.light form.detail-box-contact input,.box-contact.light form.detail-box-contact textarea {
+                border-color: var(--line-contact);
+            }
+            .box-contact.dark form.detail-box-contact input,.box-contact.dark form.detail-box-contact textarea {
+                border-color: var(--line-contact-dark);
+                color: rgb(20, 20, 20);
+            }
 
         form.detail-box-contact textarea::-webkit-scrollbar {
             width: 8px;  /* Độ rộng thanh cuộn */
         }
         
         form.detail-box-contact textarea::-webkit-scrollbar-thumb {
-            background: #6b6b6b; /* Màu thanh trượt */
+            background: #6b6b6bb2; /* Màu thanh trượt */
             border-radius: 10px;
         }
-        
+            .box-contact.light form.detail-box-contact textarea::-webkit-scrollbar-thumb {
+                background: #6b6b6bb2;
+            }
+            .box-contact.dark form.detail-box-contact textarea::-webkit-scrollbar-thumb {
+                background: #e7e7e7a8;
+            }
+
         form.detail-box-contact textarea::-webkit-scrollbar-thumb:hover {
-            background: #e7e7e7; /* Đổi màu khi hover */
+            background: #e7e7e7d8; /* Đổi màu khi hover */
         }
+            .box-contact.light form.detail-box-contact textarea::-webkit-scrollbar-thumb:hover {
+                background: #e7e7e7d8;
+            }
+            .box-contact.dark form.detail-box-contact textarea::-webkit-scrollbar-thumb:hover {
+                background: #6b6b6bb2;
+            }
 
 
         .button-contact {
@@ -1060,7 +1160,15 @@ body {
                 color: #3d3d3d;
                 z-index: 2;
                 cursor: pointer;
+
+                transition: color 0.5s;
             }
+                .box-contact.light #button-contact{
+                    color: #292929;
+                }
+                .box-contact.dark #button-contact{
+                    color: rgb(226, 226, 226);
+                }
 
             .button-contact .ani-hover::after {
                 top: 33px;
@@ -1069,6 +1177,12 @@ body {
                 background-color: rgb(223, 223, 223);
                 z-index: 1;
             }
+                .box-contact.light .button-contact .ani-hover::after{
+                    background-color: rgb(223, 223, 223);
+                }
+                .box-contact.dark .button-contact .ani-hover::after{
+                    background-color: rgb(70, 70, 70);
+                }
             
             .button-contact .ani-hover:hover::after {
                 width: 123px;
@@ -1164,6 +1278,12 @@ body {
                 position: absolute;
                 background-color: var(--main-color);
             }
+                .box-contact.light .box1-contact::before {
+                    background-color: var(--main-color);
+                }
+                .box-contact.dark .box1-contact::before {
+                    background-color: var(--main-color-dark);
+                }
 
         .logo-contact {
             width: 100%;
@@ -1203,24 +1323,49 @@ body {
                     position: absolute;
                     top:0px;
                 }
+                    .box-contact.light .head-content-contact {
+                        color: #2c2c2c3b;
+                    }
+                    .box-contact.dark .head-content-contact {
+                        color: #ebebeb50;
+                    }
+
 
                 .body-content-contact {
                     margin-top: 36px;
                     font-size: 28px;
                     color: #444444;
                 }
+                    .box-contact.light .body-content-contact {
+                        color: #444444;
+                    }
+                    .box-contact.dark .body-content-contact {
+                        color: #d1d1d1;
+                    }
 
                     .body-content-contact p span:first-child {
                         /* @ */
                         /* font-size: 20px; */
                         color: #c59c15;
                     }
+                        .box-contact.light .body-content-contact p span:first-child {
+                            color: #c59c15;
+                        }
+                        .box-contact.dark .body-content-contact p span:first-child {
+                            color: #39c40f;
+                        }
 
                     .body-content-contact p span:last-child {
                         /* gmail.com */
                         color: #d3ae35;
                         font-size: 20px;
                     }
+                        .box-contact.light .body-content-contact p span:last-child {
+                            color: #d3ae35;
+                        }
+                        .box-contact.dark .body-content-contact p span:last-child {
+                            color: #53d42c;
+                        }
 
                     div.body-content-contact {
                         height: 42px;
@@ -1235,6 +1380,12 @@ body {
                             align-items: center;
                             text-decoration: none;
                         }
+                            .box-contact.light div.body-content-contact a {
+                                color: rgb(61, 61, 61);
+                            }
+                            .box-contact.dark div.body-content-contact a {
+                                color: #d1d1d1;
+                            }
 
                         div.body-content-contact i{
                             font-size: 32px;
@@ -1246,6 +1397,13 @@ body {
                             font-size: 36px;
                             color: var(--main-color);
                         }
+                            .box-contact.light div.body-content-contact i:hover {
+                                color: var(--main-color);
+                            }
+                            .box-contact.dark div.body-content-contact i:hover {
+                                color: var(--main-color-dark);
+                            }
+
 /* footer */
 #footer {
     font-family: "Poppins", serif;
@@ -1260,6 +1418,12 @@ body {
     z-index: 1;
     position: relative;
 }
+    #footer.light {
+        color: #535353;
+    }
+    #footer.dark {
+        color: #b6b6b6;
+    }
 
     #footer p {
         flex-grow: 1;
@@ -1274,12 +1438,23 @@ body {
     .hightlight-footer {
         color: #3d3d3d;
         font-weight: 500;
+        transition: color 0.5s, background-color 0.5s, border-color 0.5s;
     }
+        #footer.light .hightlight-footer{
+            color: #3d3d3d;
+        }
+        #footer.dark .hightlight-footer{
+            color: #dbdbdb;
+        }
 
     #footer a {
         text-decoration: none;
+        transition: color 0.25s;
     }
 
-    #footer a:hover {
-        color: color-mix(in srgb, var(--main-color) 80%, rgb(92, 92, 92) 20%);
-    }
+        #footer.light a:hover {
+            color: color-mix(in srgb, var(--main-color) 80%, rgb(92, 92, 92) 20%);
+        }
+        #footer.dark a:hover {
+            color: color-mix(in srgb, var(--main-color-dark) 80%, rgb(214, 214, 214) 20%);
+        }
