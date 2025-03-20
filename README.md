@@ -11,8 +11,8 @@ Chào mừng bạn đến với trang web giới thiệu bản thân của tôi!
 - **HTML** 📄
 - **CSS** 🎨 (Sử dụng **Font Awesome** để hiển thị icon)
 - **JavaScript** ⚡ (Framework: **jQuery**)
-### 🎨 Backend (basic - nosql):
-- LocalStorage (private)
+### 🎒 Backend (basic - nosql):
+- **LocalStorage** (Lưu local)
 - **GoogleSheet** 📅 
 - **FireBase** 🔥
 
