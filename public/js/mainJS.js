@@ -60,7 +60,9 @@ var arr_theme = [
     ".box-contact",
     "#footer",
     "#header",
-    "#menu-bar"
+    "#menu-bar",
+    "#job",
+    "#animation-job"
 ];
 
 $(document).ready(function(){

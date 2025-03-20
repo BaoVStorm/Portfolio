@@ -2,6 +2,14 @@
     --width: 42px;
     --top: -55px;
     --left: 60px;
+
+    /* light */
+    --hightlight-job-color: rgb(138, 208, 255);
+}
+
+:root {
+    /* dark */
+    --hightlight-job-color-dark: rgb(73, 73, 73);
 }
 
 #animation-job{
@@ -99,6 +107,7 @@
     transform: rotate(65deg);
 }
 
+/* 
 .job_drow1:after,
 .job_drow2:after,
 .job_drow3:after,
@@ -109,18 +118,30 @@
 .job_drow8:after,
 .job_drow9:after,
 .job_drow10:after,
-.job_drow11:after {
+.job_drow11:after
+equal
+.hightlight-job-color:after
+*/
+
+.hightlight-job-color:after {
     content: "";
     width: 100%;     
     border-radius: 60px;
     position: absolute;
-    background-color: rgb(138, 208, 255);
-    
+    background-color: var(--hightlight-job-color);
+    transition: background-color 0.5s;
 }
+    #animation-job.light .hightlight-job-color:after {
+        background-color: var(--hightlight-job-color);
+    }
 
-.job_drow3 {
-    /* background-color: rgba(42, 165, 93, 0.425); */
-}
+    #animation-job.dark .hightlight-job-color:after {
+        background-color: var(--hightlight-job-color-dark);
+    }
+
+/* .job_drow3 {
+    background-color: rgba(42, 165, 93, 0.425);
+} */
 
 .job_drow1::after{
     bottom: 0px;

@@ -8,7 +8,7 @@
 /* light theme */
 :root {
     --text-job: #b86ee0fb;
-    --shadow-job: #504e49fb;
+    --shadow-job: rgba(111, 36, 151, 0.984);
     --main-color: #fab410;
     --shadow-contact: #a0a0a0fb;
     --text-color: #4b4b4b;
@@ -21,8 +21,8 @@
 
 /* dark theme */
 :root {
-    --text-job-dark: #b86ee0fb;
-    --shadow-job-dark: #504e49fb;
+    --text-job-dark: #bd1600fb;
+    --shadow-job-dark: rgba(85, 17, 0, 0.671);
     --main-color-dark: #00c90a;
     --shadow-contact-dark: #a0a0a0fb;
     --text-color-dark: #dadada;
@@ -132,14 +132,17 @@ body {
 
     font-family: "Poppins", serif;
 }
-
-    #name.light {
-        color: var(--main-color);
+    #name {
+        color: #ffffff;
     }
 
-    #name.dark{
-        color: var(--main-color-dark);
-    }
+        #name.light {
+            color: var(--main-color);
+        }
+
+        #name.dark{
+            color: var(--main-color-dark);
+        }
 
 #home {
     /* margin-top: 150px; */
@@ -239,7 +242,27 @@ body {
 
                     -webkit-transform: translateX(-8px) translateY(-8px);
                     transform: translateX(-8px) translateY(-8px);
+                    transition: text-shadow 0.5s;
                 }
+                    #job.light {
+                        color: var(--text-job);
+                        text-shadow: 
+                            1px 1px var(--shadow-job), 
+                            2px 2px var(--shadow-job), 
+                            3px 3px var(--shadow-job), 
+                            4px 4px var(--shadow-job), 
+                            5px 5px var(--shadow-job);
+                    }
+
+                    #job.dark {
+                        color: var(--text-job-dark);
+                        text-shadow: 
+                            1px 1px var(--shadow-job-dark), 
+                            2px 2px var(--shadow-job-dark), 
+                            3px 3px var(--shadow-job-dark), 
+                            4px 4px var(--shadow-job-dark), 
+                            5px 5px var(--shadow-job-dark);
+                    }
 
             #animation-job {
                 width: 100%;
