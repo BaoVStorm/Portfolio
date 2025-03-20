@@ -5,9 +5,10 @@
 
 👋 Chào mừng bạn đến với trang web giới thiệu bản thân của tôi! 🚀
 
+### ©️ Trang Web này hoàn toàn được làm 100% bởi tôi (không hề dựa vào nguồn code nào cả)
+
 🕛 Web này được tôi thực hiện trong khoảng 4-5 tuần.
 
-### ©️ Trang Web này hoàn toàn được làm 100% bởi tôi (không hề dựa vào nguồn code nào cả)
 
 ### ⚙️ Công nghệ hỗ trợ:
 
