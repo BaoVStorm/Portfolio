@@ -11,9 +11,9 @@
 
 #### Công nghệ hỗ trợ:
 
-####- ChatGPT: AI giúp tôi học thêm các thuộc tính mới trong css **(Không giúp tôi code)**
+#### - ChatGPT: AI giúp tôi học thêm các thuộc tính mới trong css **(Không giúp tôi code)**
 
-####- Extact: Website giúp tôi có ý tưởng về template 
+#### - Extact: Website giúp tôi có ý tưởng về template 
 
 ## 🛠 Công Nghệ Sử Dụng
 
