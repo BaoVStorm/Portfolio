@@ -83,8 +83,8 @@ $(document).ready(function(){
 
 var change_img_theme = {
     "#logo-header img": [
-        "assets/logo/VStorm.png",
-        "assets/logo/VStorm_dark.png"
+        "assets/logo/VS_logo.png",
+        "assets/logo/VS_logo_dark.png"
     ],
     "#contact .logo-contact img": [
         "assets/logo/logo.png",
