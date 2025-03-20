@@ -24,20 +24,26 @@ $(document).ready(function() {
 });
 
 // --------------------- menu bar (dark light - bar)
+function darkLightBarEvent() {
+    var $darklightbar = $("#dark-light-bar");
+
+    $darklightbar.toggleClass("switch-light");
+    $darklightbar.toggleClass("switch-dark");
+
+    $darklightbar.find("#switch-bar").toggleClass("switch-light");
+    $darklightbar.find("#switch-bar").toggleClass("switch-dark");
+
+    changeTheme();
+}
+
 $(document).ready(function(){
     var $darklightbar = $("#dark-light-bar");
-    var $header = $("#header");
+    // var $header = $("#header");
 
     $darklightbar.on("click", function() {
         // console.log("click menu bar");
         
-        $darklightbar.toggleClass("switch-light");
-        $darklightbar.toggleClass("switch-dark");
-
-        $darklightbar.find("#switch-bar").toggleClass("switch-light");
-        $darklightbar.find("#switch-bar").toggleClass("switch-dark");
-
-        changeTheme();
+        darkLightBarEvent();
     });
 
 });
@@ -75,30 +81,6 @@ $(document).ready(function(){
     });
 });
 
-function changeTheme() {
-
-    var theme = 0;
-    
-    // Change Class (dark - light)
-    arr_theme.forEach(obj => {
-        // console.log(obj);
-
-        $(obj).toggleClass("light");
-        $(obj).toggleClass("dark");
-
-        if($(obj).hasClass("dark"))
-            theme = 1; // dark
-        else    
-            theme = 0; // light
-    });
-
-    // change image (dark - light)
-    for(var query in change_img_theme) {
-        $(query).attr("src", change_img_theme[query][theme]);
-    }
-    
-}
-
 var change_img_theme = {
     "#logo-header img": [
         "assets/logo/VStorm.png",
@@ -115,3 +97,63 @@ var change_img_theme = {
     // ]
 };
 
+function changeTheme() {
+
+    var theme = 0;
+    
+    // Change Class (dark - light)
+    arr_theme.forEach(obj => {
+        // console.log(obj);
+
+        $(obj).toggleClass("light");
+        $(obj).toggleClass("dark");
+
+        if($(obj).hasClass("dark")) {
+            theme = 1; // dark
+            saveLocalStorageTheme("dark");
+        }
+            
+        else { 
+            theme = 0; // light
+            saveLocalStorageTheme("light");
+        }
+    });
+
+    // change image (dark - light)
+    for(var query in change_img_theme) {
+        $(query).attr("src", change_img_theme[query][theme]);
+    }
+    
+}
+
+// ------------------------- Save LocalStorage theme (dark-light)
+function loadLocalStorageTheme() {
+
+    // kiểm tra tồn tại, mặc định là light
+    if(localStorage.getItem("theme") !== null)
+        return "light";
+
+    return localStorage.getItem("theme");
+}
+
+function saveLocalStorageTheme(theme) {
+    localStorage.setItem("theme", theme);
+}
+
+$(document).ready(function() {
+    
+
+    // đảm bảo chạy sau cùng tất cả các document
+    setTimeout(function() {
+        if(localStorage.getItem("theme") !== null)
+            console.log("Load Theme: " + localStorage.getItem("theme"));
+
+        if(localStorage.getItem("theme") === null)
+            return;
+    
+        if(localStorage.getItem("theme") == "dark")
+            darkLightBarEvent();
+    }, 0);
+
+    
+});
