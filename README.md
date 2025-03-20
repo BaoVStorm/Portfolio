@@ -3,15 +3,15 @@
 
 # 🌟 Giới Thiệu
 
-### Chào mừng bạn đến với trang web giới thiệu bản thân của tôi! 🚀
+#### Chào mừng bạn đến với trang web giới thiệu bản thân của tôi! 🚀
 
-### Web này được tôi thực hiện trong khoảng 4-5 tuần.
+#### Web này được tôi thực hiện trong khoảng 4-5 tuần.
 
-### **Trang Web này hoàn toàn được làm 100% bởi tôi (không hề dựa vào nguồn code nào cả)**
+#### **Trang Web này hoàn toàn được làm 100% bởi tôi (không hề dựa vào nguồn code nào cả)**
 
-### Công nghệ hỗ trợ:
-- ChatGPT: AI giúp tôi học thêm các thuộc tính mới trong css **(Không giúp tôi code)**
-- Extact: Website giúp tôi có ý tưởng về template 
+#### Công nghệ hỗ trợ:
+####- ChatGPT: AI giúp tôi học thêm các thuộc tính mới trong css **(Không giúp tôi code)**
+####- Extact: Website giúp tôi có ý tưởng về template 
 
 ## 🛠 Công Nghệ Sử Dụng
 
