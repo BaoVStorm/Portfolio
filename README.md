@@ -7,9 +7,9 @@
 
 🕛 Web này được tôi thực hiện trong khoảng 4-5 tuần.
 
-#### Trang Web này hoàn toàn được làm 100% bởi tôi (không hề dựa vào nguồn code nào cả)
+### ©️ Trang Web này hoàn toàn được làm 100% bởi tôi (không hề dựa vào nguồn code nào cả)
 
-#### Công nghệ hỗ trợ:
+### ⚙️ Công nghệ hỗ trợ:
 
 - ChatGPT: AI giúp tôi học thêm các thuộc tính mới trong css **(Không giúp tôi code)**
 
