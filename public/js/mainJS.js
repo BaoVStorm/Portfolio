@@ -89,12 +89,11 @@ var change_img_theme = {
     "#contact .logo-contact img": [
         "assets/logo/logo.png",
         "assets/logo/logo_dark.png"
+    ],
+    "#introduce-avatar img": [
+        "assets/images/avatar.jpeg",
+        "assets/images/avatar_dark.JPG"
     ]
-    //,
-    // "avatar": [
-    //     "assets/",
-    //     "assets/"
-    // ]
 };
 
 function changeTheme() {
@@ -111,8 +110,7 @@ function changeTheme() {
         if($(obj).hasClass("dark")) {
             theme = 1; // dark
             saveLocalStorageTheme("dark");
-        }
-            
+        }  
         else { 
             theme = 0; // light
             saveLocalStorageTheme("light");
@@ -122,6 +120,11 @@ function changeTheme() {
     // change image (dark - light)
     for(var query in change_img_theme) {
         $(query).attr("src", change_img_theme[query][theme]);
+        
+        // $(query).addClass("disable_img");
+        // $(query).eq(theme).removeClass("disable_img");
+
+        // console.log()
     }
     
 }

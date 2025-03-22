@@ -406,7 +406,7 @@ body {
             }   
 
             #introduce-avatar.dark {
-                border-color: rgb(45, 128, 25);
+                border-color: rgb(34, 100, 18);
             }   
 
 
@@ -416,6 +416,8 @@ body {
                 object-fit: cover;
                 object-position: center;
                 position: absolute;
+
+                transition: opacity 0.8s;
             }
 
 /* About */
@@ -1483,3 +1485,8 @@ body {
         #footer.dark a:hover {
             color: color-mix(in srgb, var(--main-color-dark) 80%, rgb(214, 214, 214) 20%);
         }
+
+/* option */
+.disable_img {
+    opacity: 0;
+}
