@@ -2,7 +2,7 @@ var url_img = "assets/images/";
 
 list_projects = [
     {
-        "img": "https://raw.githubusercontent.com/BaoVStorm/King_The_Lost/refs/heads/VStorm/KingTheLost_logo.png",
+        "img": "https://raw.githubusercontent.com/BaoVStorm/King_The_Lost/refs/heads/VStorm/KingTheLost_logo_tran.png",
         "title": "King The Lost - Game App",
         "des": "My personal project - KING The Lost, is an action-adventure game developed with Unity, where a lost king battles enemies in a dangerous forest while awaiting rescue.",
         "href": "https://github.com/BaoVStorm/King_The_Lost"
@@ -14,8 +14,8 @@ list_projects = [
         "href": "https://github.com/BaoVStorm/Web_IntroduceMySelf"
     },
     {
-        "img": "https://static.vecteezy.com/system/resources/previews/055/600/847/non_2x/an-eye-catching-isometric-icon-of-a-plant-in-a-decorative-square-planter-vector.jpg",
-        "title": "Plant eCommerce - Website",
+        "img": "https://github.com/coconerd/iBeleaf/blob/main/public/images/favicon/plantEcommerce_padding.png?raw=true",
+        "title": "iBeleaf - Website",
         "des": "This is a team project with my homies at <i>COCONERD</i> — an eCommerce website designed to manage and sell plants, featuring a streamlined process and a user-friendly interface for a smooth shopping experience.",
         "href": "https://github.com/coconerd/plant-ecommerce"
     },
@@ -32,7 +32,7 @@ list_projects = [
     //     "href": "https://github.com/BaoVStorm/Olap"
     // },
     {
-        "img": "https://raw.githubusercontent.com/coconerd/LessIsMore_Tomato/refs/heads/VStorm/background.jpg?token=GHSAT0AAAAAAC476LCJ7WHDAVSRTR24WYYKZ623PGQ",
+        "img": "assets/projects/datamining_bg.png",
         "title": "LessIsMore - DataMining",
         "des": "A team project with <i>COCONERD</i> — this project focused on data mining for tomato pest and disease recognition using the MobileNet model. This lightweight model delivers impressive performance.",
         "href": "https://github.com/coconerd/LessIsMore_Tomato"
