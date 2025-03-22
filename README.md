@@ -3,7 +3,18 @@
 
 # 🌟 Giới Thiệu
 
-Chào mừng bạn đến với trang web giới thiệu bản thân của tôi! 🚀
+👋 Chào mừng bạn đến với trang web giới thiệu bản thân của tôi! 🚀
+
+### ©️ Trang Web này hoàn toàn được làm bởi tôi (không dựa vào nguồn code nào cả)
+
+🕛 Web này được tôi thực hiện trong khoảng 4-5 tuần.
+
+
+### ⚙️ Công nghệ hỗ trợ:
+
+- ChatGPT: AI giúp tôi học thêm các thuộc tính mới trong css (không hỗ trợ code)
+
+- Extact: Website giúp tôi có ý tưởng về template 
 
 ## 🛠 Công Nghệ Sử Dụng
 
@@ -11,6 +22,10 @@ Chào mừng bạn đến với trang web giới thiệu bản thân của tôi!
 - **HTML** 📄
 - **CSS** 🎨 (Sử dụng **Font Awesome** để hiển thị icon)
 - **JavaScript** ⚡ (Framework: **jQuery**)
+### 🎒 Backend (basic - nosql):
+- **LocalStorage** (Lưu local)
+- **GoogleSheet** 📅 
+- **FireBase** 🔥
 
 ## 📌 Mô Tả
 Trang web này được xây dựng nhằm mục đích giới thiệu về bản thân, trình bày kỹ năng và chia sẻ các dự án cá nhân. 
