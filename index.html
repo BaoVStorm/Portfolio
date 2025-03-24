@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="public/css/separate.css">
     <link rel="stylesheet" href="public/css/header.css"> 
     <link rel="stylesheet" href="public/css/elementorSpacer.css">
+    <link rel="stylesheet" href="public/css/backend.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <!-- js  -->
@@ -23,6 +24,8 @@
     <script src="public/js/animation.js"></script>
     <script src="public/js/header.js"></script>
     <script src="public/js/localStorage.js"></script>
+    <!-- backend -->
+    <script type="module" src="public/js/backend/realtime-FirebaseDatabase.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -103,6 +106,26 @@
         <div id="head-decorate">
         </div>
         <div id="head-content">
+            <div id="count">
+                <div class="box-count">
+                    <p class="title-count">
+                        <span>Total</span>
+                        <span class="value-count" id="total-visit">0</span>  
+                        <span>Visits</span>
+                    </p>
+                    <!-- <p >54</p> -->
+                </div>
+        
+                <div class="box-count">
+                    <p class="title-count">
+                        <span>Total</span>
+                        <span class="value-count" id="total-engagement">0</span> 
+                        <span>Engagements</span>
+                    </p>
+                    <!-- <p >152</p> -->
+                </div>
+            </div>
+
             <div id="introduce-text">
                 <p class="hi text-hello">
                 <!-- <p class="hi text-hello fa-bounce" style="--fa-animation-duration: 1s;">  -->
@@ -193,7 +216,7 @@
             <div class="avatar-container">
                 <div class="dot-pattern"></div>
                 <div id="introduce-avatar">
-                    <img src="assets/images/avatar.jpeg" onerror="this.onerror=null; this.src='assets/images/origin-avatar.jpg';" alt="avatar">
+                    <img  onerror="this.onerror=null; this.src='assets/images/origin-avatar.jpg';" alt="avatar">
                     <!-- <img src="assets/images/avatar_dark.JPG" class="disable_img" onerror="this.onerror=null; this.src='assets/images/origin-avatar.jpg';" alt="avatar"> -->        
                 </div>
             </div>
@@ -537,3 +560,4 @@
     -->
 </body>
 </html>
+

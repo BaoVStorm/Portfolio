@@ -68,7 +68,8 @@ var arr_theme = [
     "#header",
     "#menu-bar",
     "#job",
-    "#animation-job"
+    "#animation-job",
+    "#count"
 ];
 
 $(document).ready(function(){
@@ -151,12 +152,13 @@ $(document).ready(function() {
         if(localStorage.getItem("theme") !== null)
             console.log("Load Theme: " + localStorage.getItem("theme"));
 
-        if(localStorage.getItem("theme") === null)
-            return;
-    
         if(localStorage.getItem("theme") == "dark")
             darkLightBarEvent();
-    }, 0);
+        else {
+            var avatar_img = "#introduce-avatar img"
 
+            $(avatar_img).attr("src", change_img_theme[avatar_img][0]);
+        }
+    }, 0);
     
 });

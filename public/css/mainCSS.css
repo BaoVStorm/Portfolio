@@ -194,15 +194,22 @@ body {
         display: flex;
         position: relative;
         justify-content: center;
-        padding: 0px 50px;
-        row-gap: 50px;
-        column-gap: 90px;
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* padding: 0px 50px; */
+        row-gap: 80px;
+        column-gap: 70px;
         flex-wrap: wrap;
     }
 
         #introduce-text{
             /* width: 100%; */
-            width: 700px;
+            width: 700px;   
+            margin: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* margin: 0px 60px; */
         }
             #introduce-text p {
                 margin: 0px;
@@ -285,6 +292,7 @@ body {
             .follow-container {
                 display: flex;
                 align-items: center;
+                margin-bottom: 15px;
             }
 
                 .follow-container p:first-child{
@@ -349,6 +357,7 @@ body {
             flex-direction: column;
             justify-content: center;
             /* padding: 0px 50px; */
+            margin: 0px 25px;
             position: relative;
         }
 
@@ -394,7 +403,6 @@ body {
             /* width: 50%; */
             width: 540px;
             /* height: 500px; */
-
             aspect-ratio: 1 / 1;
             position: relative;
             border: 3px rgb(252, 238, 194) solid;
@@ -419,6 +427,8 @@ body {
 
                 transition: opacity 0.8s;
             }
+
+
 
 /* About */
 
@@ -641,6 +651,7 @@ body {
     /* display: flex; */
     /* height: 700px; */
     width: max(55%, 850px);
+    
     /* margin-left: calc(max(20%, 200px) - 200px); */
 }
 
@@ -661,6 +672,11 @@ body {
     .box-skill-1th {
         margin-left: 0px;
         width: auto;
+    }
+
+    .box-skill-1th:last-child {
+        display: flex;
+        gap: 100px;
     }
 }
 
@@ -1489,4 +1505,90 @@ body {
 /* option */
 .disable_img {
     opacity: 0;
+}
+
+/* - Backend - */
+/* count visits */
+
+#count {
+    display: flex;
+    gap: 25px;
+    direction: rtl;
+    margin-left: 15px;
+    /* margin-right: 5px; */
+
+    writing-mode:sideways-lr;
+    justify-content: center;
+}
+
+    #count .box-count {
+        /* flex-grow: 1; */
+        /* padding-left: 150px; */
+        direction: ltr;
+
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+        margin-bottom: 20px;
+    }
+
+        .box-count p {
+            font-family: "Poppins", serif;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            /* font-size: 18px; */
+        }
+            
+            .title-count {
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: rgb(148, 148, 148);
+            }
+
+                #count.light .box-count .title-count {
+                    color: rgb(133, 133, 133);
+                }
+                
+                #count.dark .box-count .title-count {
+                    color: rgb(116, 116, 116);
+                }
+
+            .value-count {
+                font-size: 32px;
+                color: rgb(126, 126, 126);
+                font-weight: 500;
+            }
+
+                #count.light .box-count .value-count {
+                    color: rgb(110, 110, 110);
+                }
+                
+                #count.dark .box-count .value-count {
+                    color: rgb(150, 150, 150);
+                }
+
+@media screen and (max-width: 900px){
+    #count {
+        writing-mode:inherit;
+        /* direction:initial; */
+        justify-content: center;
+        gap: 20px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #count .box-count {
+        /* flex-grow:  1; */
+        margin: 0px;
+        margin-right: 60px;
+    }
+
+    #home {
+        padding-top: 80px;
+    }
 }
