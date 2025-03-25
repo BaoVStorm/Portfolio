@@ -57,9 +57,9 @@ function PATCH(name, value) {
 }
 
 
-window.GET = GET;
+// window.GET = GET;
 
-export {GET}
+// export {GET}
 
 
 // Add Engagements_event_listener
