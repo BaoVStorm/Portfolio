@@ -1,9 +1,10 @@
-
-<center>
-  đây là phần source về trang giới thiệu bản thân tôi
-</center>
-
 ![welcome](https://github.com/user-attachments/assets/5ec8996c-991e-4497-a785-a7b950a27589)
+
+<h3 align="center">
+  đây là phần source về trang giới thiệu bản thân tôi
+</h3>
+
+<hr>
 
 # 🌟 Host - Link
 
