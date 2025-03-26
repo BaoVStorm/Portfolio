@@ -1,9 +1,9 @@
 
 ![welcome](https://github.com/user-attachments/assets/5ec8996c-991e-4497-a785-a7b950a27589)
 
-# 🌟 Host
+# 🌟 Host - Link
 
-🔗 Bạn có thể xem trang web của tôi qua link sau: https://baovstorm.github.io/Portfolio/
+🔗 Bạn có thể xem trực tiếp trang web của tôi qua link sau: https://baovstorm.github.io/Portfolio/
 
 # 🌟 Giới Thiệu
 
