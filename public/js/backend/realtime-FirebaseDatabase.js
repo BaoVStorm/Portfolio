@@ -97,8 +97,11 @@ $(document).ready(function() {
     //     } 
     // });
 
-    $("a").on("click", function(event) {
-        // console.log("Sss");
+    $("a").on("mousedown", function(event) {
+        if ($(this).hasClass('preventEvent')) {
+            event.preventDefault();
+            return; 
+        }
 
         GET('total_engagement', '#total-engagement', 1);
     });

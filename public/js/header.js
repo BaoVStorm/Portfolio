@@ -70,3 +70,11 @@ $(document).ready(function(){
         $header.toggleClass("close-header");
     });
 });
+
+// --------------------- prevent event Header
+
+$(document).ready(function(){
+    $('.preventEvent').on('click', (e) => {
+        e.preventDefault();
+    });
+});
