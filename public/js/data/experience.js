@@ -1,21 +1,21 @@
 list_exp = [
     {
-        "from": "March 1, 2028",
-        "to": "September 1, 2030",
-        "name_company": "Viettel",
-        "full_name": "Viettel Military Industry and Telecoms Group",
+        "from": "September 1, 2022",
+        "to": "June 1, 2026",
+        "name_company": "UIT",
+        "full_name": "University of Information Technology",
         "location": "HCM - VietNam",
-        "job": "Software Engineer",
-        "des_job": "<strong>Just My Dream...</strong>"
+        "job": "Student",
+        "des_job": "Studied core IT subjects such as Programming, Data Structures, and Web Development; actively joined team projects, and coding contests; built small websites and apps to practice skills; collaborated with classmates and improved teamwork, problem-solving, and self-learning abilities."
     }, 
     {
-        "from": "october 1, 2030",
-        "to": "March 1, 2035",
-        "name_company": "VNG Corporation",
-        "full_name": "VinaGame",
-        "location": "HCM - VietNam",
-        "job": "Game Developer",
-        "des_job": "<strong>Just My Dream...</strong>"
+        "from": "From Date",
+        "to": "To Date",
+        "name_company": "Company Name",
+        "full_name": "Full Company Name",
+        "location": "Company Location",
+        "job": "Job Role",
+        "des_job": "<strong>Job Description...</strong>"
     }
 ];
 
