@@ -911,7 +911,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap:70px 40px; 
+        gap:70px 32px; 
     }
 
         .detail-box-project {
