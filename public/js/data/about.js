@@ -13,7 +13,7 @@ let list_achie = [
     },
     {
         name: "gpa",
-        value: "3.6x"
+        value: "3.5x"
     }
 ];
 

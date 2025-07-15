@@ -14,7 +14,7 @@ list_projects = [
         "href": "https://github.com/BaoVStorm/King_The_Lost"
     },
     {
-        "img": "https://github.com/user-attachments/assets/dfcbef73-53d5-44e7-bf85-f8978d1c09d6",
+        "img": "assets/projects/portfolio.png",
         "title": "My Portfolio - Website",
         "des": "This is my personal project — a website to introduce myself with ReactJS. Additionally, it serves as a platform to showcase my skills and continuously improve them through practice.",
         "href": "https://github.com/BaoVStorm/Portfolio_React"
@@ -26,7 +26,7 @@ list_projects = [
         "href": "https://github.com/coconerd/plant-ecommerce"
     },
     {
-        "img": "https://raw.githubusercontent.com/coconerd/uiteco-swing/refs/heads/main/src/main/resources/UITeco-funlogo.png",
+        "img":  "assets/projects/uit.png",
         "title": "UITeco - Desktop App",
         "des": "A team project with <i>COCONERD</i> — my best team in university. This project is about an app that serves not only as a forum but also as a bridge connecting teachers, alumni, and students.",
         "href": "https://github.com/coconerd/uiteco-swing"
@@ -50,7 +50,7 @@ list_projects = [
         "href": "https://github.com/coconerd/LessIsMore_Tomato"
     },
     {
-        "img": "https://img.freepik.com/free-vector/virtual-currency-flat-style-banners-set_1284-15605.jpg",
+        "img": "assets/projects/attack.png",
         "title": "Inversion Attack - Security",
         "des": "Inversion Attack is an attack technique in the field of security and machine learning, aimed at reconstructing the original data from the output or weights of an AI model.",
         "href": "https://github.com/BaoVStorm/InversionAttack"
