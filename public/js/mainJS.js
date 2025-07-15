@@ -1,6 +1,5 @@
 // animation khi nhấn chọn section
 
-// console.log("asdf");
 function loadSection(idSection, time) {
     $("html, body").animate({
         scrollTop: ($(idSection).offset().top + 10)
@@ -48,6 +47,8 @@ $(document).ready(function(){
 
 });
 
+// --
+
 var arr_theme = [
     "body",
     "#name",
@@ -81,6 +82,8 @@ $(document).ready(function(){
         $(obj).addClass("light");
     });
 });
+
+// --
 
 var change_img_theme = {
     "#logo-header img": [
