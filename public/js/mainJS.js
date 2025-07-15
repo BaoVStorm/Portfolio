@@ -68,6 +68,7 @@ var arr_theme = [
     "#footer",
     "#header",
     "#menu-bar",
+    ".head-box-skill",
     "#job",
     ".element-icon",
     "#animation-job",

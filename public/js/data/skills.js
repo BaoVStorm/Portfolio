@@ -11,6 +11,12 @@ let list_skills = {
         "javascript": 83,
         "C# With Unity - Game Dev": 85
     },
+    "#framework": {
+        "Node.JS": 83,
+        "React": 80,
+        "JQuery": 87,
+        "Laravel": 75,
+    },
     "#soft-skill": {
         "creativity": 87,
         "flexibility": 87,
