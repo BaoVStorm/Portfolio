@@ -954,12 +954,12 @@ body {
 
                 .detail-box-project.light .image-box-project:hover img{
                     transform: scale(1.15);
-                    filter: drop-shadow(0 0 15px #fab41050);
+                    filter: drop-shadow(0 0 14px #fab41065);
                 }
 
                 .detail-box-project.dark .image-box-project:hover img{
                     transform: scale(1.15);
-                    filter: drop-shadow(0 0 15px #00c90a50);
+                    filter: drop-shadow(0 0 14px #00c90a65);
                 }
 
 
