@@ -1,7 +1,18 @@
 let connect_database = "https://myportfolio-website-cb461-default-rtdb.firebaseio.com/.json";
 
 $(document).ready(function() {
-    GET("count_access", "#total-visit", 1);
+    
+    let lastVisit = localStorage.getItem("lastVisit");
+    let now = new Date().getTime();
+    let oneDay = 12 * 60 * 60 * 1000; // nữa ngày hay 12 tiếng sẽ reset
+
+    if (!lastVisit || now - lastVisit > oneDay) {
+        GET("count_access", "#total-visit", 1);
+        localStorage.setItem("lastVisit", now);
+    } else {
+        GET("count_access", "#total-visit", 0);
+    }
+
     GET('total_engagement', '#total-engagement', 0);
 
     // PATCH(35);
