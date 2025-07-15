@@ -329,9 +329,14 @@ body {
                         animation: biggerIcon 0.25s forwards;
                     }
 
-                    .element-icon:hover .hover-icon{
-                        animation: fadeIn 0.8s forwards;
-                    }
+                        .element-icon.light:hover .hover-icon.light{
+                            animation: fadeIn 0.8s forwards;
+                        }
+
+                        .element-icon.dark:hover .hover-icon.dark{
+                            animation: fadeIn 0.8s forwards;
+                        }
+
 
                     /* animation icon */
                     @keyframes fadeIn {

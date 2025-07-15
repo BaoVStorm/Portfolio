@@ -69,6 +69,7 @@ var arr_theme = [
     "#header",
     "#menu-bar",
     "#job",
+    ".element-icon",
     "#animation-job",
     "#count"
 ];
