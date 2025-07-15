@@ -9,11 +9,10 @@ function loadSection(idSection, time) {
 $(document).ready(function() {
     var $listA = $("#menu").find("a");
 
-    // loadSection("#home", 500);
-    // setTimeout(() => {
-    //     $("#skills").find(".nonslider-skill-detail").addClass("start-nonslider");
-    //     console.log("add");
-    // }, 500);
+    // go to first page
+    setTimeout(() => {
+        loadSection("#home", 500);
+    }, 0);
 
     $listA.on("click", function () {
         // console.log("clicked");
