@@ -59,6 +59,9 @@
         .first-content {
             display: flex;
             column-gap: 65px;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 80px;
         }
 
         #introduce-text{
