@@ -29,14 +29,14 @@ $(document).ready(function() {
             <div class="detail-box-exp text-main light">
                 <div class="time-detail-box-exp">
                     <div class="spe-box-exp">
-                        <div class="spe1-exp spe-exp"></div> <h1 class="from-time-detail-box-exp">
+                        <div class="spe1-exp spe-exp"></div> <h4 class="from-time-detail-box-exp">
                             ${exp["from"]}
-                        </h1> <div class="spe2-exp spe-exp"></div>
+                        </h4> <div class="spe2-exp spe-exp"></div>
                     </div>
                     <div class="spe-box-exp">
-                        <div class="spe2-exp spe-exp"></div> <h1 class="to-time-detail-box-exp">
+                        <div class="spe2-exp spe-exp"></div> <h4 class="to-time-detail-box-exp">
                             ${exp["to"]}
-                        </h1> <div class="spe1-exp spe-exp"></div>
+                        </h4> <div class="spe1-exp spe-exp"></div>
                     </div>
                 </div>
 

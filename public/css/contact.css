@@ -12,11 +12,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px 40px;
+    gap: 60px 40px;
 }
 
     .detail-box-contact{
-        min-width: 520px;
+        width: clamp(100px, 74.3vw, 520px);
         /* height: 700px; */
         display: flex;
         flex-direction: column;
@@ -42,7 +42,7 @@
             position: absolute;
             top: -20px;
             right: -25%;
-            font-size: 470px;
+            font-size: clamp(100px, 76vw, 470px);
             color: #2020200c;
             /* z-index: -1; */
             transition: color 0.5s;
@@ -56,7 +56,7 @@
 
 
             div.detail-box-contact .decorate-contact {
-                font-size: 295px;
+                font-size: clamp(100px, 42.1vw, 295px);
                 /* top: 0px; */
                 top: auto;
                 right: auto;
@@ -66,7 +66,7 @@
 
         form.detail-box-contact label {
             text-transform: capitalize;
-            /* font-size: var(--main-font-size); */
+            font-size: clamp(10px, 2.8vw, var(--main-font-size));
             display: flex;
         }
         
@@ -98,7 +98,7 @@
             margin-top: 15px;
             margin-bottom: 40px;
             font-family: "Poppins", serif;
-            font-size: var(--main-font-size);
+            font-size: clamp(10px, 2.5vw, var(--main-font-size));
             border-bottom: 2px rgb(99, 99, 99) solid;
             transition: color 0.5s, border-color 0.5s;
         }
@@ -179,7 +179,7 @@
 
     
     .detail-box-contact:last-child {
-        width: 520px;
+        width: clamp(100px, 85vw, 520px);
         display: flex;
         flex-direction: column;
         height: auto;
@@ -251,7 +251,7 @@
             text-align: center;
             padding: 20px 0px;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: clamp(10px, 2.7vw, var(--main-font-size));
             font-weight: 500;
             position: relative;
             margin-bottom: 20px;
@@ -276,7 +276,7 @@
 
         .logo-contact {
             width: 100%;
-            height: 230px;
+            height: clamp(100px, 38.5vw, 230px);
             position: relative;
             text-align: center;
         }
@@ -291,8 +291,8 @@
         .box2-contact {
             display: flex;
             flex-direction: column;
-            padding: 0px 65px;
-            padding-bottom: 75px;
+            padding: 0px clamp(0px, 10vw, 65px);
+            padding-bottom: clamp(0px, 6.8vw, 75px);
         }
 
             .content-contact {
@@ -307,7 +307,7 @@
                 .head-content-contact {
                     text-transform: uppercase;
                     color: #2c2c2c3b;
-                    font-size: 17px;
+                    font-size: clamp(10px, 3.5vw, 17px);
                     margin-top: 15px;
                     position: absolute;
                     top:0px;
@@ -322,7 +322,7 @@
 
                 .body-content-contact {
                     margin-top: 36px;
-                    font-size: 28px;
+                    font-size: clamp(10px, 4.7vw, 28px);
                     color: #444444;
                 }
                     .box-contact.light .body-content-contact {
@@ -347,7 +347,7 @@
                     .body-content-contact p span:last-child {
                         /* gmail.com */
                         color: #d3ae35;
-                        font-size: 20px;
+                        font-size: clamp(10px, 3.1vw,20px);
                     }
                         .box-contact.light .body-content-contact p span:last-child {
                             color: #d3ae35;
@@ -377,13 +377,13 @@
                             }
 
                         div.body-content-contact i{
-                            font-size: 32px;
-                            width: 32px;
+                            font-size: clamp(10px, 6vw, 32px);
+                            width: clamp(10px, 6vw, 32px);
                             text-align: center;
                         }
 
                         div.body-content-contact i:hover{
-                            font-size: 36px;
+                            font-size: clamp(10px, 7.3vw, 36px);
                             color: var(--main-color);
                         }
                             .box-contact.light div.body-content-contact i:hover {

@@ -1,22 +1,5 @@
 /* About */
 
-.section {
-    padding-top: var(--top-section);
-    margin-bottom: 35px;
-    font-family: "Poppins", serif;
-    justify-content: center;
-    gap: 30px;
-    position: relative;
-    min-height: 500px;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns:auto; */
-    /* overflow: hidden; */
-}
-
 /* #about {
     background-color: rgba(255, 0, 0, 0.473);
 } */
@@ -73,7 +56,7 @@
             padding: 0px;
             margin: 0px;
             font-weight: 500;
-            font-size: var(--main-font-size);
+            font-size: clamp(14px, 3vw, var(--main-font-size));
         }
 
         .info-title {
@@ -97,8 +80,6 @@
 
     .about-achie {
         width: 750px;
-        /* margin-right: calc(max(250px, 15%) - 250px); */
-        /* background-color: rgba(0, 255, 85, 0.39); */
     }
 
         .about-achie-head {
@@ -116,14 +97,14 @@
             letter-spacing: 3px;
         }
             .about-achie-box-title {
-                font-size: var(--head-font-size);
+                font-size: clamp(16px, 3.2vw, var(--head-font-size));
                 font-weight: 500;
                 margin-top: 30px;
                 margin-bottom: 10px;
             }
 
             .about-achie-box-content {
-                font-size: 85px;
+                font-size: clamp(25px, 13vw, 85px);
                 font-weight: 800;
                 margin: 0px;
             }
@@ -136,12 +117,13 @@
                     color: var(--main-color-dark);
                 }
 
-        /* .about-achie-body {
-            background-color: rgba(7, 7, 223, 0.205);
-        } */
+        .about-achie-body {
+            display: flex;
+            flex-direction: column;
+        }
 
             .about-chie-des-title h1{
-                font-size: calc(var(--head-font-size) + 1px);
+                font-size: clamp(18px, 3.3vw, 23px);
                 /* font-weight: 600; */
                 /* color: red; */
             }
@@ -151,18 +133,21 @@
             }
 
                 .about-chie-des-content p{
-                    font-size: calc(var(--main-font-size) + 1px);
+                    margin-top: 0;
+                    font-size: clamp(14px, 3vw, 17px);
                 }
 
             #button-downloadcv {
                 background-color: var(--main-color);
-                font-size: 20px;
-                padding: 20px 90px;
+                /* font-size: 20px; */
+                font-size: clamp(14px, 2.8vw, 20px);
+                padding: clamp(14px, 2.8vw, 20px) clamp(40px, 12.9vw, 90px);
                 font-weight: 500;
                 color: #464545;
                 text-decoration: none;
                 /* margin: 100px; */
                 margin-top: 50px !important;
+                flex-shrink: 0;
             }
                 #button-downloadcv.light{
                     color: var(--text-color);
@@ -188,16 +173,21 @@
 
             .about-achie {
                 min-width: 565px;
-                width: calc(100% - 320px);
+                margin-right: 20px;
+                width: calc(100% - 340px);
             }
         }
 
         @media screen and (max-width: 900px) {
-            /* .about-achie-head {
-                background-color: red;
-            } */
-
             .about-achie-box *{
-                padding-left: 30%;
+                text-align: center;
+            }
+
+            .about-achie {
+                min-width: clamp(100px, 81vw, 565px);
+            }
+
+            .box-download {
+                text-align: center;
             }
         }

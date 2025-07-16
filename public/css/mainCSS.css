@@ -145,6 +145,25 @@ body {
         }
 
 
+/* section */
+
+.section {
+    padding-top: clamp(10px, 21.5vw, var(--top-section));
+    margin-bottom: 35px;
+    font-family: "Poppins", serif;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns:auto; */
+    /* overflow: hidden; */
+}
+
 /* option */
 .disable_img {
     opacity: 0;

@@ -16,7 +16,7 @@
     /* display: flex; */
     /* height: 700px; */
     width: max(55%, 850px);
-    
+
     /* margin-left: calc(max(20%, 200px) - 200px); */
 }
 
@@ -25,24 +25,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5px;
-}
-
-
-@media screen and (max-width: 1060px){
-    .box-skill-1th:last-child, .body-box-skill-2col{
-        display: flex !important;
-        flex-direction: column;
-    }
-
-    .box-skill-1th {
-        margin-left: 0px;
-        width: auto;
-    }
-
-    .box-skill-1th:last-child {
-        display: flex;
-        gap: 100px;
-    }
 }
 
 /* .box-skill-2th {
@@ -60,7 +42,7 @@
             background-color: #666666;
             color: #e7e7e7;
             padding: 10px 35px;
-            font-size: var(--head-font-size);
+            font-size: clamp(10px, 4vw, var(--head-font-size));
             position: relative;
 
             margin-bottom: 50px;
@@ -103,12 +85,12 @@
 
             .percent-nonslider-skill {
                 font-weight: 400;
-                font-size: 30px;
+                font-size: clamp(20px, 6vw, 30px);
                 bottom: 0px;
                 /* color: var(--main-color); */
                 margin-top: 21px;
                 /* margin-right: 27px; */
-                min-width: 85px;
+                min-width: clamp(50px, 17vw, 85px);
             }
                 .percent-nonslider-skill.light {
                     color: var(--main-color);
@@ -132,13 +114,13 @@
                     text-transform: capitalize;
                     color: #585858;
                     font-weight: 450;
-                    font-size: calc(var(--main-font-size) + 1px);
+                    font-size: clamp(13px, 3.2vw, 17px);
                 }
 
                 .nonslider-skill {
                     /* background-color: aquamarine; */
-                    width: 300px;
-                    height: 31px;
+                    width: clamp(100px, 55vw, 300px);
+                    height: clamp(20px, 7vw, 31px);
                     position: relative;
                     display: flex;
                     align-items: center;
@@ -169,3 +151,27 @@
                     .start-nonslider {
                         width: 0% !important;
                     }
+
+
+@media screen and (max-width: 1060px){
+    .box-skill-1th:last-child, .body-box-skill-2col{
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .box-skill-1th {
+        margin-left: 0px;
+        width: auto;
+    }
+
+    .box-skill-1th:last-child {
+        display: flex;
+        gap: 100px;
+    }
+
+    /*  */
+
+    .detail-box-skill {
+        padding: 0px;
+    }
+}

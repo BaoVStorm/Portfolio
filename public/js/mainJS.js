@@ -19,6 +19,10 @@ $(document).ready(function() {
         var idSubmenu = $(this).attr("href");
         loadSection(idSubmenu, 500);
     });
+
+    $('#logo-header').on("click", function () {
+        loadSection("#home", 500);
+    });
 });
 
 // --------------------- menu bar (dark light - bar)
