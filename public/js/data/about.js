@@ -9,7 +9,7 @@ let list_achie = [
     },
     {
         name: "projects",
-        value: 10   
+        value: 12   
     },
     {
         name: "gpa",
