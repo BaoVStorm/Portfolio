@@ -31,7 +31,7 @@ let list_skills = {
 
 
 function loadSkillSection () {
-    for(skill in list_skills) {
+    for(var skill in list_skills) {
         // add skill into skills section
         var $skill = $(skill);
     
@@ -72,8 +72,55 @@ function loadSkillSection () {
     }
 }
 
+// function updateColorSkill () {
+//     for(var skill in list_skills) {
+//         // add skill into skills section
+//         var $skill = $(skill);
+
+//         console.log(skill)
+    
+//         $skill.find(".nonslider-skill-detail").each((index, element) => {
+//             const percent = $(element).css("width");
+
+//             var percent_color = 50 + (percent - high_percent) * 50 / (100 - high_percent);
+
+//             const bgColor = $(element).css("background-color");
+
+//             console.log(percent);
+//             console.log(bgColor);
+
+//             $(element).css("background-color", `
+//                 color-mix(in srgb, ${bgColor} ${100 - percent_color}%,rgb(255, 34, 34) ${percent_color}%)
+//                 `
+//             );
+//         });
+
+//         // for(var detail_skill in list_skills[skill]) {
+//         //     var percent = list_skills[skill][detail_skill];
+
+//         //     // edit color slider
+//         //     var $nonslider = $con_skill.find(".nonslider-skill-detail")
+
+//         //     // $nonslider.css("transition", "width 0.6s");
+//         //     $nonslider.css("width", `${percent}%`);
+                
+//         //     if(percent >= high_percent) {
+//         //         var percent_color = 50 + (percent - high_percent) * 50 / (100 - high_percent);
+
+//         //         let bgColor = $nonslider.css("background-color");
+                
+//         //         $con_skill.find(".nonslider-skill-detail").css("background-color", `
+//         //             color-mix(in srgb, ${bgColor} ${100 - percent_color}%,rgb(255, 34, 34) ${percent_color}%)
+//         //             `
+//         //         );
+//         //     }
+//         // }
+//     }
+// }
+
 $(document).ready(function() {
     loadSkillSection();
+    // updateColorSkill();
 });
 
 function loadAnimation($skill) {
