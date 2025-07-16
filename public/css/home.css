@@ -48,18 +48,22 @@
         height: 100%;
         display: flex;
         position: relative;
-        justify-content: center;
+        justify-content: space-evenly;
         /* justify-content: space-between; */
         /* justify-content: space-around; */
         /* padding: 0px 50px; */
         row-gap: 80px;
-        column-gap: 70px;
         flex-wrap: wrap;
     }
 
+        .first-content {
+            display: flex;
+            column-gap: 65px;
+        }
+
         #introduce-text{
             /* width: 100%; */
-            width: 700px;   
+            width: 665px;   
             margin: 0px 20px;
             display: flex;
             flex-direction: column;
