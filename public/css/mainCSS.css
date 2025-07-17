@@ -169,3 +169,7 @@ body {
     opacity: 0;
 }
 
+/* text none-decoration */
+.none-decoration {
+    text-decoration: none;
+}
