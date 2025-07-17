@@ -4,7 +4,8 @@ $(document).ready(function() {
     
     let lastVisit = localStorage.getItem("lastVisit");
     let now = new Date().getTime();
-    let oneDay = 12 * 60 * 60 * 1000; // nữa ngày hay 12 tiếng sẽ reset
+    // nữa ngày hay 12 tiếng sẽ reset
+    let oneDay = 12 * 60 * 60 * 1000; 
 
     if (!lastVisit || now - lastVisit > oneDay) {
         GET("count_access", "#total-visit", 1);
@@ -14,14 +15,11 @@ $(document).ready(function() {
     }
 
     GET('total_engagement', '#total-engagement', 0);
-
-    // PATCH(35);
 });
 
 // -- Lấy dữ liệu (GET)
 function GET(name, id, increment) {
     // console.log(`--- GET<${name}> Database (RealTime) - by VStorm so Proo ---`);
-
     // key <name>_lastDate
 
     fetch(connect_database)
@@ -63,40 +61,14 @@ function PATCH(name, value) {
         headers: { "Content-Type": "application/json" }
     })
     .then(response => response.json())
-    // .then(data => console.log(data))
     .catch(error => console.error(error));
 }
 
-
-// window.GET = GET;
-
-// export {GET}
 
 
 // Add Engagements_event_listener
 
 $(document).ready(function() {
-    // $("a").each(function() {
-    //     // console.log($(this));
-
-    //     var last_value_attr = $(this).attr("onclick");
-    //     if(last_value_attr == null)
-    //          last_value_attr = "";
-
-    //     last_value_attr += " GET('total_engagement', '#total-engagement', 1);";
-
-    //     $(this).attr("onclick", last_value_attr);
-
-    //     // console.log("attr: " + last_value_attr);  
-    // });
-
-    // $("a").on("mousedown", function(event) {
-    
-    //     if (event.which === 1 || event.which === 2) {
-    //         console.log("Nhấn chuột trái vào:", this);
-    //     } 
-    // });
-
     $("a").on("mousedown", function(event) {
         if ($(this).hasClass('preventEvent')) {
             event.preventDefault();
