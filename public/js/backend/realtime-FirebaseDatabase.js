@@ -5,7 +5,7 @@ $(document).ready(function() {
     let lastVisit = localStorage.getItem("lastVisit");
     let now = new Date().getTime();
     // nữa ngày hay 12 tiếng sẽ reset
-    let oneDay = 12 * 60 * 60 * 1000; 
+    let oneDay = 16 * 60 * 60 * 1000; 
 
     if (!lastVisit || now - lastVisit > oneDay) {
         GET("count_access", "#total-visit", 1);
