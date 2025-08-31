@@ -13,7 +13,7 @@ list_exp = [
         "to": "Current",
         "name_company": "ITR",
         "full_name": "Impact Technical Resources",
-        "location": "Saigon Paragon, Tan My Ward, HCM - VietNam",
+        "location": "Saigon Paragon, District 7, HCM - VietNam",
         "job": "Full-Stack Developer",
         "des_job": "Full-Stack Developer Intern at ITR – Contributed to the end-to-end development of web applications by implementing responsive front-end features with React, building scalable back-end services with Node.js, and managing databases with SQL/MongoDB in a collaborative Agile environment."
     }
