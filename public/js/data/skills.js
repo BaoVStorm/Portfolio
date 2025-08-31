@@ -8,12 +8,14 @@ let list_skills = {
         "python": 82,
         "java": 75,
         "sql": 86,
-        "javascript": 83,
+        "javaScript, TypeScript": 83,
         "C# With Unity - Game Dev": 85
     },
     "#framework": {
         "Node.JS": 83,
-        "React": 80,
+        "React.JS": 80,
+        "Redux": 75,
+        "Tailwind CSS": 76,
         "JQuery": 87,
         "Laravel": 75,
     },
