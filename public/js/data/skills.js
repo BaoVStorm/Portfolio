@@ -4,11 +4,11 @@ let list_skills = {
     "#programming-language": {
         "c, c++": 92,
         "html, css": 88,
-        "php": 76,
+        "javaScript, TypeScript": 83,
+        "sql": 86,
         "python": 82,
         "java": 75,
-        "sql": 86,
-        "javaScript, TypeScript": 83,
+        "php": 76,
         "C# With Unity - Game Dev": 85
     },
     "#framework": {
