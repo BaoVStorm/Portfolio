@@ -9,13 +9,13 @@ list_exp = [
         "des_job": "Studied core IT subjects such as Programming, Data Structures, and Web Development; actively joined team projects, and coding contests; built small websites and apps to practice skills; collaborated with classmates and improved teamwork, problem-solving, and self-learning abilities."
     }, 
     {
-        "from": "From Date",
-        "to": "To Date",
-        "name_company": "Company Name",
-        "full_name": "Full Company Name",
-        "location": "Company Location",
-        "job": "Job Role",
-        "des_job": "<strong>Job Description...</strong>"
+        "from": "September 1, 2025",
+        "to": "Current",
+        "name_company": "ITR",
+        "full_name": "Impact Technical Resources",
+        "location": "Saigon Paragon, Tan My Ward, HCM - VietNam",
+        "job": "Full-Stack Developer",
+        "des_job": "Full-Stack Developer Intern at ITR – Contributed to the end-to-end development of web applications by implementing responsive front-end features with React, building scalable back-end services with Node.js, and managing databases with SQL/MongoDB in a collaborative Agile environment."
     }
 ];
 
