@@ -1,3 +1,5 @@
+@import url("../public/animation.css");
+
 /* About */
 
 /* #about {
@@ -51,7 +53,16 @@
         margin-right: calc(max(35%, 440px) - 440px);
         margin-left: calc(max(35%, 440px) - 440px);
         padding-left: 30px;
+
+        opacity: 0;
     }
+    .about-info.load {
+        /* first load */
+        animation: slideRight 1s ease-out forwards;  
+        animation-delay: 0;
+    }
+
+
         .info-title, .info-content{
             padding: 0px;
             margin: 0px;
@@ -85,6 +96,13 @@
         .about-achie-head {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+
+            opacity: 0;
+        }
+        .about-achie-head.load {
+            /* first load */
+            animation: fadeUp 1s ease-out forwards;  
+            animation-delay: 0s;
         }
 
         .about-achie-box {
@@ -127,9 +145,24 @@
                 /* font-weight: 600; */
                 /* color: red; */
             }
+            .about-chie-des-title{
+                opacity: 0;
+            }
+            .about-chie-des-title.load{
+                /* first load */
+                animation: fadeUp 0.8s ease-out forwards;  
+                animation-delay: 0.4s;
+            }
             
             .about-chie-des-content {
                 margin-bottom: 60px;
+
+                opacity: 0;
+            }
+            .about-chie-des-content.load {
+                /* first load */
+                animation: fadeUp 0.7s ease-out forwards;  
+                animation-delay: 0.8s;
             }
 
                 .about-chie-des-content p{
@@ -137,34 +170,43 @@
                     font-size: clamp(14px, 3vw, 17px);
                 }
 
-            #button-downloadcv {
-                background-color: var(--main-color);
-                /* font-size: 20px; */
-                font-size: clamp(14px, 2.8vw, 20px);
-                padding: clamp(14px, 2.8vw, 20px) clamp(40px, 12.9vw, 90px);
-                font-weight: 500;
-                color: #464545;
-                text-decoration: none;
-                /* margin: 100px; */
-                margin-top: 50px !important;
-                flex-shrink: 0;
+            .box-download {
+                opacity: 0;
             }
-                #button-downloadcv.light{
-                    color: var(--text-color);
-                }
-                #button-downloadcv.dark{
-                    /* color: var(--text-color-dark); */
-                    color: var(--main-background-color-dark);
-                }
+            .box-download.load {
+                /* first load */
+                animation: fadeUp 0.5s ease-out forwards;  
+                animation-delay: 1s;
+            }
 
-            #button-downloadcv.light:hover {
-                background-color: color-mix(in srgb, var(--main-color) 80%, #ffd663 20%) !important;
-                color: #202020;
-            }
-            #button-downloadcv.dark:hover {
-                background-color: color-mix(in srgb, var(--main-color-dark) 80%, #707070 20%) !important;
-                color: #202020;
-            }
+                #button-downloadcv {
+                    background-color: var(--main-color);
+                    /* font-size: 20px; */
+                    font-size: clamp(14px, 2.8vw, 20px);
+                    padding: clamp(14px, 2.8vw, 20px) clamp(40px, 12.9vw, 90px);
+                    font-weight: 500;
+                    color: #464545;
+                    text-decoration: none;
+                    /* margin: 100px; */
+                    margin-top: 50px !important;
+                    flex-shrink: 0;
+                }
+                    #button-downloadcv.light{
+                        color: var(--text-color);
+                    }
+                    #button-downloadcv.dark{
+                        /* color: var(--text-color-dark); */
+                        color: var(--main-background-color-dark);
+                    }
+
+                #button-downloadcv.light:hover {
+                    background-color: color-mix(in srgb, var(--main-color) 80%, #ffd663 20%) !important;
+                    color: #202020;
+                }
+                #button-downloadcv.dark:hover {
+                    background-color: color-mix(in srgb, var(--main-color-dark) 80%, #707070 20%) !important;
+                    color: #202020;
+                }
 
         @media screen and (max-width: 1250px) {
             .about-achie-head {
