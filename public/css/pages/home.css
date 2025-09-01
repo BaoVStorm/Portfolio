@@ -307,7 +307,7 @@
             /* first load */
             opacity: 0;
             transform: translateY(50px);
-            animation: fadeUp 1.2s ease-out forwards;
+            animation: fadeUpX2 1s ease-out forwards;
         }
             #introduce-avatar.light {
                 border-color: rgb(252, 238, 194);

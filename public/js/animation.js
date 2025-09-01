@@ -126,6 +126,8 @@ function loadContact($contact) {
 }
 
 $(document).ready(function () {
+    // home
+
     // about
     var $about = $("#about");    
 
