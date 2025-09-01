@@ -12,10 +12,28 @@ function checkClose($object, value) {
     return position < scrollTop + screenHeight - value;
 }
 
-
 // Home Section
-function loadHome() {
+let isLoadHome = false;
+function loadHome($home) {
+    if(isLoadHome)
+        return
 
+    let arr_obj = [
+        ".dot-pattern",
+        "#description",
+        ".follow-container",
+        ".avatar-container",
+        "#introduce-avatar",
+        "#count",
+    ];
+
+    if(checkClose($home, 450)) {
+        isLoadHome = true;
+
+        arr_obj.forEach(obj => {
+            $home.find(obj).addClass("load");
+        });
+    }
 }
 
 // About Section
@@ -126,28 +144,17 @@ function loadContact($contact) {
 }
 
 $(document).ready(function () {
-    // home
+    if($(window).scrollTop() <= 600)
+        loadHome($("#home"));
 
-    // about
-    var $about = $("#about");    
-
-    // skill
-    var $skill = $("#skills");
-    
-    // project
-    var $project = $("#projects");
-
-    // experience
-    var $experience = $("#experience");
-
-    // contact
-    var $contact = $("#contact");
-
-    $(window).on("scroll", function () {
-        loadAbout($about);
-        loadSkill($skill);
-        loadProject($project);
-        loadExperience($experience);
-        loadContact($contact);
-    });
+    setTimeout(() => {
+        $(window).on("scroll", function () {
+            loadHome($("#home"));
+            loadAbout($("#about"));
+            loadSkill($("#skills"));
+            loadProject($("#projects"));
+            loadExperience($("#experience"));
+            loadContact($("#contact"));
+        });
+    }, 495);
 });
