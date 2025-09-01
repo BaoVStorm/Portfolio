@@ -85,6 +85,25 @@ function loadProject($project) {
     }
 }
 
+// Experiences
+let isLoadExperience = false;
+function loadExperience($experience) {
+    if(isLoadExperience)
+        return;
+
+    let arr_obj = [
+        ".box-exp",
+    ];
+
+    if(checkClose($experience, 400)) {
+        isLoadExperience = true;
+
+        arr_obj.forEach(obj => {
+            $experience.find(obj).addClass("load");
+        });
+    }
+}
+
 $(document).ready(function () {
     // about
     var $about = $("#about");    
@@ -95,9 +114,13 @@ $(document).ready(function () {
     // project
     var $project = $("#projects");
 
+    // experience
+    var $experience = $("#experience");
+
     $(window).on("scroll", function () {
         loadAbout($about);
         loadSkill($skill);
         loadProject($project);
+        loadExperience($experience);
     });
 });

@@ -9,10 +9,10 @@ function loadSection(idSection, time) {
 $(document).ready(function() {
     var $listA = $("#menu").find("a");
 
-    // // go to first page
-    // setTimeout(() => {
-    //     loadSection("#home", 500);
-    // }, 0);
+    // go to first page
+    setTimeout(() => {
+        loadSection("#home", 500);
+    }, 0);
 
     $listA.on("click", function () {
         // console.log("clicked");
