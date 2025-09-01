@@ -1,37 +1,28 @@
-// -------- test
+function loadAnimation($skill) {
+    var $nonslider = $skill.find(".nonslider-skill-detail");
 
-// - điều chỉnh thời gian chạy hàm
-// setTimeout(() => {
-//     console.log("Hiện thông báo sau 3 giây!");
-// }, 3000);
+    if(!$nonslider.hasClass("start-nonslider"))
+        return
 
-// - lặp lại hành động sau 1 khoảng thời gian
-// let count = 0;
-// let interval = setInterval(() => {
-//     count++;
-//     console.log("Đếm: " + count);
-//     if (count >= 5) clearInterval(interval);
-// }, 1000);
+    // Lấy vị trí của phần tử so với đầu trang
+    let position = $skill.offset().top;
 
+    // Lấy chiều cao của màn hình (viewport height)
+    let screenHeight = $(window).height();
 
-// - tạo animation mượt hơn
-// let position = 0;
-// function moveBox() {
-//     let $var = $("#name");
+    // Lấy vị trí cuộn hiện tại của trang (scroll position)
+    let scrollTop = $(window).scrollTop();
 
-//     position += 2;
-//     $var.css("margin-right", `${position}px`);
-//     if (position < 200) 
-//         requestAnimationFrame(moveBox);
-//     console.log(position);
-// }
-// moveBox();
-
+    if(position < scrollTop + screenHeight - 250) {
+        $nonslider.removeClass("start-nonslider");
+    }
+}
 
 $(document).ready(function () {
+    var $skill = $("#skills");
+    loadAnimation($skill);
 
-
-
-    // console.log($aa.find(".title-section").text());
-    // $aa.find(".title-section").text("asdfa");
+    $(window).on("scroll", function () {
+        loadAnimation($skill);
+    });
 });
