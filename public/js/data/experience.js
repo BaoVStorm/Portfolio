@@ -10,7 +10,7 @@ list_exp = [
     }, 
     {
         "from": "September 1, 2025",
-        "to": "Current",
+        "to": "Currently",
         "name_company": "ITR",
         "full_name": "Impact Technical Resources",
         "location": "Saigon Paragon, District 7, HCM - VietNam",
