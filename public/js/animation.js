@@ -104,6 +104,27 @@ function loadExperience($experience) {
     }
 }
 
+// Contact
+let isLoadContact = false;
+function loadContact($contact) {
+    if(isLoadContact)
+        return;
+
+    let arr_obj = [
+        "form.detail-box-contact",
+        ".detail-box-contact",
+        ".box2-contact"
+    ];
+
+    if(checkClose($contact, 400)) {
+        isLoadContact = true;
+
+        arr_obj.forEach(obj => {
+            $contact.find(obj).addClass("load");
+        });
+    }
+}
+
 $(document).ready(function () {
     // about
     var $about = $("#about");    
@@ -117,10 +138,14 @@ $(document).ready(function () {
     // experience
     var $experience = $("#experience");
 
+    // contact
+    var $contact = $("#contact");
+
     $(window).on("scroll", function () {
         loadAbout($about);
         loadSkill($skill);
         loadProject($project);
         loadExperience($experience);
+        loadContact($contact);
     });
 });

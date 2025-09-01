@@ -30,7 +30,14 @@
         position: relative;
         overflow: hidden;
         transition: background-color 0.5s,;
-    }    
+
+        opacity: 0;
+    }
+    form.detail-box-contact.load {
+        animation: zoomIn 1s ease-out forwards;  
+        animation-delay: 0s;
+    }
+    
         .box-contact.light form.detail-box-contact {
             background-color: var(--main-color);
         }
@@ -187,6 +194,12 @@
         position: relative;
         overflow: hidden;
         gap: 15px;
+
+        opacity: 0;
+    }
+    .detail-box-contact.load:last-child {
+        animation: slideRight 1s ease-out forwards;  
+        animation-delay: 0s;
     }
 
         /* start */
@@ -293,6 +306,12 @@
             flex-direction: column;
             padding: 0px clamp(0px, 10vw, 65px);
             padding-bottom: clamp(0px, 6.8vw, 75px);
+
+            opacity: 0;
+        }
+        .box2-contact.load {
+            animation: slideRight 1.5s ease-out forwards;  
+            animation-delay: 0s;
         }
 
             .content-contact {
