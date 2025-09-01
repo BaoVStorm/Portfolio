@@ -53,7 +53,7 @@ function loadSkill($skill) {
         ".skillbox3",
     ];
 
-    if(checkClose($skill, 250)) {
+    if(checkClose($skill, 400)) {
         isLoadSkill = true;
 
         arr_obj.forEach(obj => {
@@ -66,16 +66,38 @@ function loadSkill($skill) {
     }
 }
 
-$(document).ready(function () {
-    var $skill = $("#skills");
-    loadSkill($skill);
+// Projects
+let isLoadProject = false;
+function loadProject($project) {
+    if(isLoadProject)
+        return;
 
+    let arr_obj = [
+        ".box-project",
+    ];
+
+    if(checkClose($project, 400)) {
+        isLoadProject = true;
+
+        arr_obj.forEach(obj => {
+            $project.find(obj).addClass("load");
+        });
+    }
+}
+
+$(document).ready(function () {
     // about
     var $about = $("#about");    
-    loadAbout($about)
+
+    // skill
+    var $skill = $("#skills");
     
+    // project
+    var $project = $("#projects");
+
     $(window).on("scroll", function () {
-        loadSkill($skill);
         loadAbout($about);
+        loadSkill($skill);
+        loadProject($project);
     });
 });

@@ -15,6 +15,12 @@
         flex-wrap: wrap;
         justify-content: center;
         gap:clamp(20px, 10vw, 70px) 32px; 
+
+        opacity: 0;
+    }
+    .box-project.load {
+        animation: slideRight 1s ease-out forwards;  
+        animation-delay: 0s;
     }
 
         .detail-box-project {
