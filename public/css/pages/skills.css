@@ -16,6 +16,7 @@
     /* display: flex; */
     /* height: 700px; */
     width: max(55%, 850px);
+    opacity: 0;
 
     /* margin-left: calc(max(20%, 200px) - 200px); */
 }
