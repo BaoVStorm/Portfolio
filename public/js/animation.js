@@ -1,11 +1,7 @@
-function loadAnimation($skill) {
-    var $nonslider = $skill.find(".nonslider-skill-detail");
-
-    if(!$nonslider.hasClass("start-nonslider"))
-        return
-
+// Function
+function checkClose($object) {
     // Lấy vị trí của phần tử so với đầu trang
-    let position = $skill.offset().top;
+    let position = $object.offset().top;
 
     // Lấy chiều cao của màn hình (viewport height)
     let screenHeight = $(window).height();
@@ -13,16 +9,31 @@ function loadAnimation($skill) {
     // Lấy vị trí cuộn hiện tại của trang (scroll position)
     let scrollTop = $(window).scrollTop();
 
-    if(position < scrollTop + screenHeight - 250) {
+    return position < scrollTop + screenHeight - 250;
+}
+
+
+// Home Section
+
+
+
+// Skill Section
+function loadSkill($skill) {
+    var $nonslider = $skill.find(".nonslider-skill-detail");
+
+    if(!$nonslider.hasClass("start-nonslider"))
+        return
+
+    if(checkClose($skill)) {
         $nonslider.removeClass("start-nonslider");
     }
 }
 
 $(document).ready(function () {
     var $skill = $("#skills");
-    loadAnimation($skill);
+    loadSkill($skill);
 
     $(window).on("scroll", function () {
-        loadAnimation($skill);
+        loadSkill($skill);
     });
 });
