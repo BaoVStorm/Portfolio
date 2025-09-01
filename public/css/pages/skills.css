@@ -19,6 +19,18 @@
 
     /* margin-left: calc(max(20%, 200px) - 200px); */
 }
+.skillbox1.load {
+    animation: slideRight 0.8s ease-out forwards;  
+    animation-delay: 0s;
+}
+.skillbox2.load {
+    animation: slideRight 1s ease-out forwards;  
+    animation-delay: 0.2s;
+}
+.skillbox3.load {
+    animation: slideRight 1s ease-out forwards;  
+    animation-delay: 0.4s;
+}
 
 .box-skill-1th:last-child {
     /* display: flex; */

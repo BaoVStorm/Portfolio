@@ -29,7 +29,7 @@ function loadAbout($about) {
         ".about-achie-head",
         ".about-chie-des-title",
         ".about-chie-des-content",
-        ".box-download"
+        ".box-download",
     ];
 
     if(checkClose($about, 450)) {
@@ -42,14 +42,27 @@ function loadAbout($about) {
 }
 
 // Skill Section
+let isLoadSkill = false;
 function loadSkill($skill) {
-    var $nonslider = $skill.find(".nonslider-skill-detail");
-
-    if(!$nonslider.hasClass("start-nonslider"))
+    if(isLoadSkill)
         return
 
+    let arr_obj = [
+        ".skillbox1",
+        ".skillbox2",
+        ".skillbox3",
+    ];
+
     if(checkClose($skill, 250)) {
-        $nonslider.removeClass("start-nonslider");
+        isLoadSkill = true;
+
+        arr_obj.forEach(obj => {
+            $skill.find(obj).addClass("load");
+        });
+
+        setTimeout(() => {
+            $skill.find(".nonslider-skill-detail").removeClass("start-nonslider");
+        }, 200);
     }
 }
 
