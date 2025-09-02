@@ -91,6 +91,12 @@
         #introduce-text .hi {
             font-size: 30px;
             margin-bottom: 10px;
+
+            opacity: 0;
+        }
+        #introduce-text .hi.load {
+            animation: fadeDown 0.6s ease-out forwards;
+            animation-delay: 1.5s;
         }
 
             .hi.light {
@@ -104,6 +110,12 @@
         #introduce-text .intro {
             /* font-size: 50px; */
             font-size: clamp(16px, 7vw, 50px);
+
+            opacity: 0;
+        }
+        #introduce-text .intro.load {
+            animation: fadeDown 0.6s ease-out forwards;
+            animation-delay: 0.2s;
         }
 
             #introduce-text .intro span {

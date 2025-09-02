@@ -19,6 +19,8 @@ function loadHome($home) {
         return
 
     let arr_obj = [
+        ".intro",
+        ".hi",
         ".dot-pattern",
         "#description",
         ".follow-container",

@@ -2,6 +2,7 @@
     --width: 42px;
     --top: -52px;
     --left: 48px;
+    --delay: 1.5s;
 
     /* light */
     --hightlight-job-color: rgb(138, 208, 255);
@@ -130,7 +131,7 @@ equal
     position: absolute;
     background-color: var(--hightlight-job-color);
     transition: background-color 0.5s;
-}
+} 
     #animation-job.light .hightlight-job-color:after {
         background-color: var(--hightlight-job-color);
     }
@@ -145,57 +146,57 @@ equal
 
 .job_drow1::after{
     bottom: 0px;
-    animation: drawIn linear 0.4s 0s forwards;
+    animation: drawIn linear 0.4s calc(var(--delay)) forwards;
 }
 
 .job_drow2::after{
     top: 0px;
-    animation: drawIn linear 0.3s 0.35s forwards;
+    animation: drawIn linear 0.3s calc(var(--delay) + 0.35s) forwards;
 }
 
 .job_drow3::after{
     bottom: 0px;
-    animation: drawIn linear 0.35s 0.63s forwards;
+    animation: drawIn linear 0.35s calc(var(--delay) + 0.63s) forwards;
 }
 
 .job_drow4::after{
     top: 0px;
-    animation: drawIn linear 0.35s 0.95s forwards;
+    animation: drawIn linear 0.35s calc(var(--delay) + 0.95s) forwards;
 }
 
 .job_drow5::after{
     bottom: 0px;
-    animation: drawIn linear 0.3s 1.25s forwards;
+    animation: drawIn linear 0.3s calc(var(--delay) + 1.25s) forwards;
 }
 
 .job_drow6::after{
     top: 0px;
-    animation: drawIn linear 0.3s 1.50s forwards;
+    animation: drawIn linear 0.3s calc(var(--delay) + 1.50s) forwards;
 }
 
 .job_drow7::after{
     bottom: 0px;
-    animation: drawIn linear 0.35s 1.75s forwards;
+    animation: drawIn linear 0.35s calc(var(--delay) + 1.75s) forwards;
 }
 
 .job_drow8::after{
     top: 0px;
-    animation: drawIn linear 0.28s 2.05s forwards;
+    animation: drawIn linear 0.28s calc(var(--delay) + 2.05s) forwards;
 }
 
 .job_drow9::after{
     bottom: 0px;
-    animation: drawIn linear 0.25s 2.3s forwards;
+    animation: drawIn linear 0.25s calc(var(--delay) + 2.3s) forwards;
 }
 
 .job_drow10::after{
     top: 0px;
-    animation: drawIn linear 0.20s 2.5s forwards;
+    animation: drawIn linear 0.20s calc(var(--delay) + 2.5s) forwards;
 }
 
 .job_drow11::after{
     bottom: 0px;
-    animation: drawIn linear 0.15s 2.7s forwards;
+    animation: drawIn linear 0.15s calc(var(--delay) + 2.7s) forwards;
 }
 
 @keyframes drawIn {
