@@ -156,5 +156,5 @@ $(document).ready(function () {
             loadExperience($("#experience"));
             loadContact($("#contact"));
         });
-    }, 495);
+    }, 400);
 });

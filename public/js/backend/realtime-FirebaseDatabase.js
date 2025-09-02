@@ -2,14 +2,14 @@ let connect_database = "https://myportfolio-website-cb461-default-rtdb.firebasei
 
 $(document).ready(function() {
     
-    let lastVisit = localStorage.getItem("lastVisit");
+    let lastVisit = localStorage.getItem("lastVisit_VStorm");
     let now = new Date().getTime();
     // nữa ngày hay 12 tiếng sẽ reset
     let oneDay = 16 * 60 * 60 * 1000; 
 
     if (!lastVisit || now - lastVisit > oneDay) {
         GET("count_access", "#total-visit", 1);
-        localStorage.setItem("lastVisit", now);
+        localStorage.setItem("lastVisit_VStorm", now);
     } else {
         GET("count_access", "#total-visit", 0);
     }
