@@ -158,5 +158,5 @@ $(document).ready(function () {
             loadExperience($("#experience"));
             loadContact($("#contact"));
         });
-    }, 400);
+    }, 450);
 });
