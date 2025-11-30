@@ -75,7 +75,8 @@ var arr_theme = [
     "#job",
     ".element-icon",
     "#animation-job",
-    "#count"
+    "#count",
+    ".certificate-container-gallery",
 ];
 
 $(document).ready(function(){

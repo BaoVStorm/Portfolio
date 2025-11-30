@@ -24,8 +24,6 @@ function hightLight_Header() {
         var section_height = $(this).outerHeight();
         var section_pos_bottom = section_pos_top + section_height;
 
-        // console.log("â");
-
         if(section_pos_bottom - section_height / 2 > window_pos && window_pos >= section_pos_top) {
             if(last_submenu != null) {
                 last_submenu.removeClass(nameClassHL);

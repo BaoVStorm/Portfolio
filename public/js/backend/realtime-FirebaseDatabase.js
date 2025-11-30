@@ -60,7 +60,7 @@ function GET(key, selector, increment) {
       const currentCount = typeof data.count === 'number' ? data.count : 0;
       const newCount = currentCount + increment;
 
-      console.log('data: ', data);
+      // console.log('data: ', data);
 
       // Format value
       const reformatValue = newCount.toLocaleString('de-DE');
