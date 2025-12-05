@@ -26,6 +26,7 @@ function updateGalleryItems() {
     if ($item.data('isHovered')) {
       flex = `1 ${listCers[idx].flex}`;
       $item.addClass('active');
+      $indicator.text(listCers[idx].title);
     } else {
       flex = defaultItemFlex;
       $item.removeClass('active');
@@ -60,6 +61,7 @@ function setEventSlider() {
   // rời khỏi gallery => reset all
   $galleryContainer.on('mouseleave', () => {
     $galleryContainer.removeClass('hover');
+    $indicator.text('');
 
     $galleryItems.each(function () {
       $(this).data('isHovered', false);

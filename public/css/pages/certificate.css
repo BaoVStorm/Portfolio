@@ -1,5 +1,4 @@
 #certificate {
-    width: 100vw;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -26,14 +25,20 @@
 
 .certificate-container-indicator {
     position: absolute;
-    top: -2px;
+    top: -8px;
     left: 0;
-    width: 5px;
+    min-width: 5px;
     height: 5px;
-    background: #0aca03f1;
-    border-radius: 100%;
+    border-radius: 10px;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+    .certificate-container-indicator.dark {
+        background: #0aca038e;
+        color: rgba(255, 255, 255, 0.795);
+    }
+    .certificate-container-indicator.light {
+        background: #f09c0067;
+    }
 
 .certificate-container-gallery {
     display: flex;
@@ -67,11 +72,11 @@
 }
 
     .certificate-container-gallery.hover.light .certificate-container-gallery-item.active{
-        filter: drop-shadow(0 0 14px #c78c02de);
+        filter: drop-shadow(0 0 14px #ca8d009d);
     }
 
     .certificate-container-gallery.hover.dark .certificate-container-gallery-item.active{
-        filter: drop-shadow(0 0 14px #17c70069);
+        filter: drop-shadow(0 0 14px #17c7008f);
     }
 
 .certificate-container-gallery-item img{
