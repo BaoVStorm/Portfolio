@@ -1,6 +1,10 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-throw-literal */
-/* eslint-disable no-console */
+/* Tại sao bạn lại ở đây!!! tôi biết là bạn đang xem code của tôi. Thật sự tui rất cảm kích */
+/* Bạn có thể khám phá thoải mái, source này thật sự chưa clean nhiều thứ còn hạng chế nhiều */
+/* Nhưng tôi không có thời gian để improve và nơi này cũng chỉ để những người như bạn vào xem thôi nên improve là không cần thiết */
+/* Dù sao thì thanks vì bạn đã ở đây, Tôi sẽ còn update chỗ này nhiều hơn nữa tôi sẽ không để trang web này bị chết đâu :> */
+
+/* Còn về api Firebase này. Việc nó ở đây là 1 điều tôi thấy khá đau đầu, vì git không cho private */
+/* Còn nếu bạn muốn crawl thì cứ thoải mái vì tôi đã set rules rồi và 1 phần cũng chả có gì để crawl cả :> */
 const connectDatabase = 'https://myportfolio-website-cb461-default-rtdb.firebaseio.com';
 
 // ===============================
