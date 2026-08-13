@@ -46,7 +46,13 @@ function App() {
   useEffect(() => {
     const handleMouseDown = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target.closest('a') || target.closest('.subnemu')) {
+      
+      // Do not count engagement for clicks on the header navigation
+      if (target.closest('#header')) {
+        return;
+      }
+
+      if (target.closest('a')) {
         const globalGet = (window as any).GET;
         if (typeof globalGet === 'function') {
           globalGet('ENGAGEMENT', '#total-engagement', 1);
