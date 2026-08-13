@@ -119,7 +119,7 @@ export const HomeSection: React.FC = () => {
 <div className={`avatar-container ${isLoaded ? "load" : ""}`}>
 <div className={`dot-pattern ${isLoaded ? "load" : ""}`}></div>
 <div id="introduce-avatar" className={`${isLoaded ? "load" : ""}`}>
-<img src={`${import.meta.env.BASE_URL}assets/images/avatar.jpeg`} alt="avatar" />
+<img src={`${import.meta.env.BASE_URL}assets/images/avatar_original_2.JPG`} alt="avatar" />
 {/*  <img src={`${import.meta.env.BASE_URL}assets/images/avatar_dark.JPG`} className="disable_img" alt="avatar" />  */}
 </div>
 </div>
