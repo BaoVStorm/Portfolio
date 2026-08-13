@@ -18,6 +18,17 @@ function App() {
   });
   const [isHeaderClosed, setIsHeaderClosed] = useState(false);
 
+  // Scroll to home on page load (F5)
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  }, []);
+
   // Effect to apply theme DOM updates whenever it changes
   useEffect(() => {
     // Wait for a small tick to ensure DOM nodes (especially sections) are fully mounted 

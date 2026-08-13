@@ -1,8 +1,17 @@
 import { useEffect, useState, useRef } from 'react';
+import { applyTheme } from '@/features/theme-toggle/ThemeManager';
 
 export function useScrollAnimation(threshold: number) {
   const [isLoaded, setIsLoaded] = useState(false);
   const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (isLoaded) {
+      setTimeout(() => {
+        applyTheme(localStorage.getItem("theme") === "dark");
+      }, 50);
+    }
+  }, [isLoaded]);
 
   useEffect(() => {
     if (isLoaded) return;
