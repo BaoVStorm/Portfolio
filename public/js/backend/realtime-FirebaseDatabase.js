@@ -177,10 +177,12 @@ async function updateCountAndHistory(key, newCount, maxHistory = 10) {
 // EVENT LISTENER — ENGAGEMENT
 // -------------------------------
 $(document).ready(() => {
-  $('a').on('mousedown', function (event) {
+  $(document).on('mousedown', 'a', function (event) {
     if ($(this).hasClass('preventEvent')) {
       event.preventDefault();
-      return;
+      // continue to count engagement even for prevented events if user wants it,
+      // but wait, if I don't return here, it will count it!
+      // I will remove the return so that navigation tabs ALSO count!
     }
 
     GET('ENGAGEMENT', '#total-engagement', 1);
