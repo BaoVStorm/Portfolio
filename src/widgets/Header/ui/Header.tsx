@@ -8,8 +8,8 @@ export const Header: React.FC = () => {
 <div className="subnemu">
 {/*  VStorm  */}
 <div id="logo-header">
-<img alt="logo" src="assets/logo/VS_logo.png"/>
-{/*  <img src="assets/logo/VS_logo_dark.png" alt="logo" />  */}
+<img alt="logo" src={`${import.meta.env.BASE_URL}assets/logo/VS_logo.png`}/>
+{/*  <img src={`${import.meta.env.BASE_URL}assets/logo/VS_logo_dark.png`} alt="logo" />  */}
 </div>
 </div>
 </div>
