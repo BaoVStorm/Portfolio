@@ -53,11 +53,11 @@ function App() {
 
       <HomeSection />
       <AboutSection />
+      <CertificateSection />
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
       <ContactSection />
-      <CertificateSection />
       <Footer />
       
       {/* 

@@ -10,7 +10,7 @@ export const Header: React.FC<HeaderProps> = ({ isHeaderClosed = false }) => {
   useEffect(() => {
     const handleScroll = () => {
       const windowPos = window.scrollY;
-      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'contact'];
+      const sections = ['home', 'about', 'certificate', 'skills', 'projects', 'experience', 'contact'];
       
       let currentSection = activeSection;
       
@@ -57,13 +57,14 @@ export const Header: React.FC<HeaderProps> = ({ isHeaderClosed = false }) => {
         </div>
       </div>
       <ul className="header-content" id="menu">
-        {['home', 'about', 'skills', 'projects', 'experience', 'contact'].map((section) => (
+        {['home', 'about', 'certificate', 'skills', 'projects', 'experience', 'contact'].map((section) => (
           <li key={section} className={`subnemu ${activeSection === section ? 'highlight-submenu' : ''}`}>
             <a href={`#${section}`} onClick={(e) => scrollToSection(e, section)}>
               <span className="long-show-header">{section}</span>
               <span className="short-show-header">
                 {section === 'home' ? 'hm' : 
                  section === 'about' ? 'abt' : 
+                 section === 'certificate' ? 'cer' : 
                  section === 'skills' ? 'sk' : 
                  section === 'projects' ? 'prj' : 
                  section === 'experience' ? 'exp' : 'cnt'}

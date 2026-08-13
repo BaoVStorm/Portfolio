@@ -5,12 +5,11 @@ export const Footer: React.FC = () => {
     <>
 <footer id="footer">
 <p>
-<span>Copyright</span>
+<span>Copyright </span>
 <i className="fa-regular fa-copyright"></i>
-<span>2025 
-                    <span className="hightlight-footer">VStorm | TranVuBao</span>. 
-                    All rights reserved.
-                </span>
+<span> 2025 </span>
+<span className="hightlight-footer">VStorm | TranVuBao</span>
+<span>. All rights reserved.</span>
 </p>
 {/*  <p>
                 <span className="hightlight-footer">85%</span>
@@ -23,8 +22,8 @@ export const Footer: React.FC = () => {
                 <a href="https://extact.com/" className="hightlight-footer" target="_blank">extact</a>
             </p>      */}
 <p>
-                Latest Updates:  
-                <span className="hightlight-footer">30. 11. 2025.</span>
+<span>Latest Updates: </span>
+<span className="hightlight-footer"> 30. 11. 2025.</span>
 </p>
 </footer>
     </>
