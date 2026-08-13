@@ -16,6 +16,7 @@ function App() {
   const [isDark, setIsDark] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
+  const [isHeaderClosed, setIsHeaderClosed] = useState(false);
 
   // Effect to apply theme DOM updates whenever it changes
   useEffect(() => {
@@ -29,13 +30,14 @@ function App() {
   }, [isDark]);
 
   const toggleTheme = () => setIsDark(!isDark);
+  const toggleHeader = () => setIsHeaderClosed(!isHeaderClosed);
 
   return (
     <div className="window-device">
-      <Header />
+      <Header isHeaderClosed={isHeaderClosed} />
       
       <div id="box-bar">
-          <div id="menu-bar">
+          <div id="menu-bar" onClick={toggleHeader}>
               <i className="fa-solid fa-bars"></i>
           </div>
   

@@ -2,17 +2,18 @@ import React from 'react';
 import { useScrollAnimation } from '@/shared/hooks/useScrollAnimation';
 
 const list_achie = [
-  { name: "gpa", value: "8.5" },
-  { name: "awards", value: "6" },
-  { name: "projects", value: "7" }
+  { name: "awards", value: "19" },
+  { name: "xp years", value: "0+" },
+  { name: "projects", value: "12" },
+  { name: "gpa", value: "3.5x" }
 ];
 
 const title_about = {
-  title: "My Ambition",
-  content: "From simple lines of code, I realized I could create things that connect people, solve complex problems, and make life easier. The magic of turning ideas into reality through software became my ultimate ambition..."
+  title: "Passionate Developer & Innovator",
+  content: "I am always looking for ways to optimize and develop software to deliver the best user experience. With over a year of hands-on experience in personal projects and coding competitions, I constantly strive to learn and improve my skills."
 };
 
-const url_cv = "assets/documents/CV_TranVuBao_FE.pdf"; // This might need absolute path if it exists
+const url_cv = "https://drive.google.com/file/d/1r6y_HA7CEfGvXZrtEGg5j2vPDdVZyWIo/view?usp=sharing";
 
 export const AboutSection: React.FC = () => {
   const { ref, isLoaded } = useScrollAnimation(450);
@@ -61,7 +62,7 @@ export const AboutSection: React.FC = () => {
             <p id="about-des-content">{title_about.content}</p>
           </div>
           <div className={`box-download ${isLoaded ? "load" : ""}`}>
-            <a className="background-main" href={`${import.meta.env.BASE_URL}${url_cv}`} id="button-downloadcv" target="_blank" rel="noreferrer">
+            <a className="background-main" href={url_cv} id="button-downloadcv" target="_blank" rel="noreferrer">
               Download My CV
               <i className="fa-solid fa-download"></i>
             </a>
