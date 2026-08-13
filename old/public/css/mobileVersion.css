@@ -1,0 +1,13 @@
+/* mobile version */
+
+@media screen and (max-width: 700px){
+    /* about */
+    
+    .about-achie-box-title {
+        padding: 0 !important;
+    }
+
+    #animation-job *{
+        display: none;
+    }
+}

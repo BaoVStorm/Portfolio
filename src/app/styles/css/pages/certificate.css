@@ -1,0 +1,109 @@
+#certificate {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#certificate *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#certificate .certificate-container {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    position: relative;
+    transform-origin: center;
+    width: 70%;
+    padding: 28px 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.certificate-container-indicator {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    min-width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+    .certificate-container-indicator.dark {
+        background: #0aca038e;
+        color: rgba(255, 255, 255, 0.795);
+    }
+    .certificate-container-indicator.light {
+        background: #f09c0067;
+    }
+
+.certificate-container-gallery {
+    display: flex;
+    gap: 12px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.certificate-container-gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 20px;
+    height: 550px;
+    margin: 0 5px;
+    overflow: hidden;
+    transition: flex 1s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.4s;
+
+    /* border: 2px rgba(42, 207, 1, 0.342) solid; */
+    border-radius: 5px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.certificate-container-gallery.hover .certificate-container-gallery-item{
+    opacity: 0.4;
+}
+
+.certificate-container-gallery.hover .certificate-container-gallery-item.active{
+    opacity: 1;
+}
+
+    .certificate-container-gallery.hover.light .certificate-container-gallery-item.active{
+        filter: drop-shadow(0 0 14px #ca8d009d);
+    }
+
+    .certificate-container-gallery.hover.dark .certificate-container-gallery-item.active{
+        filter: drop-shadow(0 0 14px #17c7008f);
+    }
+
+.certificate-container-gallery-item img{
+    height: 100%;
+    width: max(auto, 100%);
+    object-fit:contain;
+}
+
+@media screen and (max-width: 1100px){
+    #certificate .certificate-container {
+        margin-left: 0px;
+        width: 90%;
+    }
+}
+
+/* optimize certificate */
+@media screen and (max-width: 1400px){
+    .hover.certificate-container-gallery {
+        gap: 0px;
+    }
+
+    .hover.certificate-container-gallery .certificate-container-gallery-item{
+        display: none;
+    }
+
+    .hover.certificate-container-gallery .certificate-container-gallery-item.active{
+        display: flex;
+    }
+}
+

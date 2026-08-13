@@ -1,0 +1,235 @@
+@import url("../public/animation.css");
+
+/* About */
+
+/* #about {
+    background-color: rgba(255, 0, 0, 0.473);
+} */
+    .title-section {
+        position: absolute;
+        text-transform: uppercase;
+        z-index: -1;
+        top: var(--top-section);
+        font-size: 160px;
+        margin: 0px;    
+        writing-mode:sideways-lr;
+        color: #e2e2e2;
+        left: calc((100% - 1000px) * 0.2);
+    }
+
+        .title-section.light {
+            color: #e2e2e2;
+        }
+
+        .title-section.dark {
+            color: #535353;
+        }
+
+    @media screen and (max-width: 1100px){
+        .title-section {
+            position: relative;
+            top: auto;
+            writing-mode:horizontal-tb;
+            left: auto;
+            width: calc(100% - 25px);   
+            /* font-size: 140px; */
+            font-size: clamp(5px, 17vw, 140px);
+
+            margin-left: 25px;
+            height: 160px;
+        }
+
+        /* project section */
+        .box-project {
+            width: 100% !important;
+            margin-left: 0% !important;
+        }
+    }
+
+    .about-info {
+        width: 250px;
+        /* padding: 0px 80px;
+        left: 10px; */
+        margin-right: calc(max(35%, 440px) - 440px);
+        margin-left: calc(max(35%, 440px) - 440px);
+        padding-left: 30px;
+
+        opacity: 0;
+    }
+    .about-info.load {
+        /* first load */
+        animation: slideRight 1s ease-out forwards;  
+        animation-delay: 0;
+    }
+
+
+        .info-title, .info-content{
+            padding: 0px;
+            margin: 0px;
+            font-weight: 500;
+            font-size: clamp(14px, 3vw, var(--main-font-size));
+        }
+
+        .info-title {
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+        }
+
+        .info-title::before {
+            content: "";
+            border-left: 2px solid;
+            padding-left: 6px;
+            height: 20px;
+        }
+
+        .info-content {
+            margin-top: 2px;
+            list-style: none;
+        }
+
+    .about-achie {
+        width: 750px;
+    }
+
+        .about-achie-head {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            opacity: 0;
+        }
+        .about-achie-head.load {
+            /* first load */
+            animation: fadeUp 1s ease-out forwards;  
+            animation-delay: 0s;
+        }
+
+        .about-achie-box {
+            /* background-color: red;
+            border-radius: 25px;
+            border: 3px yellow solid; */
+            
+            /* padding-left: 30px; */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+            .about-achie-box-title {
+                font-size: clamp(16px, 3.2vw, var(--head-font-size));
+                font-weight: 500;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            .about-achie-box-content {
+                font-size: clamp(25px, 13vw, 85px);
+                font-weight: 800;
+                margin: 0px;
+            }
+
+                .about-achie-box-content.light{
+                    color: var(--main-color);
+                }
+
+                .about-achie-box-content.dark{
+                    color: var(--main-color-dark);
+                }
+
+        .about-achie-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .about-chie-des-title h1{
+                font-size: clamp(18px, 3.3vw, 23px);
+                /* font-weight: 600; */
+                /* color: red; */
+            }
+            .about-chie-des-title{
+                opacity: 0;
+            }
+            .about-chie-des-title.load{
+                /* first load */
+                animation: fadeUp 0.8s ease-out forwards;  
+                animation-delay: 0.4s;
+            }
+            
+            .about-chie-des-content {
+                margin-bottom: 60px;
+
+                opacity: 0;
+            }
+            .about-chie-des-content.load {
+                /* first load */
+                animation: fadeUp 0.7s ease-out forwards;  
+                animation-delay: 0.8s;
+            }
+
+                .about-chie-des-content p{
+                    margin-top: 0;
+                    font-size: clamp(14px, 3vw, 17px);
+                }
+
+            .box-download {
+                opacity: 0;
+            }
+            .box-download.load {
+                /* first load */
+                animation: fadeUp 0.5s ease-out forwards;  
+                animation-delay: 1s;
+            }
+
+                #button-downloadcv {
+                    background-color: var(--main-color);
+                    /* font-size: 20px; */
+                    font-size: clamp(14px, 2.8vw, 20px);
+                    padding: clamp(14px, 2.8vw, 20px) clamp(40px, 12.9vw, 90px);
+                    font-weight: 500;
+                    color: #464545;
+                    text-decoration: none;
+                    /* margin: 100px; */
+                    margin-top: 50px !important;
+                    flex-shrink: 0;
+                }
+                    #button-downloadcv.light{
+                        color: var(--text-color);
+                    }
+                    #button-downloadcv.dark{
+                        /* color: var(--text-color-dark); */
+                        color: var(--main-background-color-dark);
+                    }
+
+                #button-downloadcv.light:hover {
+                    background-color: color-mix(in srgb, var(--main-color) 80%, #ffd663 20%) !important;
+                    color: #202020;
+                }
+                #button-downloadcv.dark:hover {
+                    background-color: color-mix(in srgb, var(--main-color-dark) 80%, #707070 20%) !important;
+                    color: #202020;
+                }
+
+        @media screen and (max-width: 1250px) {
+            .about-achie-head {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-achie {
+                min-width: 565px;
+                margin-right: 20px;
+                width: calc(100% - 340px);
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .about-achie-box *{
+                text-align: center;
+            }
+
+            .about-achie {
+                min-width: clamp(100px, 81vw, 565px);
+            }
+
+            .box-download {
+                text-align: center;
+            }
+        }
