@@ -42,6 +42,22 @@ function App() {
     }, 50);
   }, [isDark]);
 
+  // Global event listener to track engagement (moved from jQuery to React to fix caching and synthetic event issues)
+  useEffect(() => {
+    const handleMouseDown = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.closest('a') || target.closest('.subnemu')) {
+        const globalGet = (window as any).GET;
+        if (typeof globalGet === 'function') {
+          globalGet('ENGAGEMENT', '#total-engagement', 1);
+        }
+      }
+    };
+    
+    document.addEventListener('mousedown', handleMouseDown);
+    return () => document.removeEventListener('mousedown', handleMouseDown);
+  }, []);
+
   const toggleTheme = () => setIsDark(!isDark);
   const toggleHeader = () => setIsHeaderClosed(!isHeaderClosed);
 

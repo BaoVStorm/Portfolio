@@ -174,17 +174,4 @@ async function updateCountAndHistory(key, newCount, maxHistory = 10) {
 }
 
 // -------------------------------
-// EVENT LISTENER — ENGAGEMENT
-// -------------------------------
-$(document).ready(() => {
-  $(document).on('mousedown', 'a', function (event) {
-    if ($(this).hasClass('preventEvent')) {
-      event.preventDefault();
-      // continue to count engagement even for prevented events if user wants it,
-      // but wait, if I don't return here, it will count it!
-      // I will remove the return so that navigation tabs ALSO count!
-    }
-
-    GET('ENGAGEMENT', '#total-engagement', 1);
-  });
-});
+// Event tracking moved to React (App.tsx) to avoid caching and React event bubbling issues.
