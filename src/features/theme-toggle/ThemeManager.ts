@@ -36,7 +36,7 @@ const change_img_theme: Record<string, [string, string]> = {
         `${import.meta.env.BASE_URL}assets/logo/logo_dark.png`
     ],
     "#introduce-avatar img": [
-        `${import.meta.env.BASE_URL}assets/images/avatar_original_2.JPG`,
+        `${import.meta.env.BASE_URL}assets/images/avatar_original_3.JPG`,
         `${import.meta.env.BASE_URL}assets/images/avatar_dark.JPG`
     ]
 };
