@@ -3,8 +3,8 @@ import { useScrollAnimation } from '@/shared/hooks/useScrollAnimation';
 
 const list_achie = [
   { name: "awards", value: "19" },
-  { name: "xp years", value: "0+" },
-  { name: "projects", value: "12" },
+  { name: "xp years", value: "1+" },
+  { name: "projects", value: "14" },
   { name: "gpa", value: "3.5x" }
 ];
 
