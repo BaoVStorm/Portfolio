@@ -53,7 +53,7 @@ export const HomeSection: React.FC = () => {
 <div className="job_drow10 hightlight-job-color"></div>
 <div className="job_drow11 hightlight-job-color"></div>
 </div>
-<p className="des text-des text-main" id="description">I'm a passionate developer who loves solving complex problems and turning ideas into reality. With expertise in multiple programming languages and a strong focus on innovation, I strive to build efficient and scalable solutions that make an impact.</p>
+<p className={`des text-des text-main ${isLoaded ? "load" : ""}`} id="description">I'm a passionate developer who loves solving complex problems and turning ideas into reality. With expertise in multiple programming languages and a strong focus on innovation, I strive to build efficient and scalable solutions that make an impact.</p>
 <div className={`follow-container ${isLoaded ? "load" : ""}`}>
 <p className="des text-des text-main">Follow Me</p>
 {/*  https://icons8.com/icon/DrWXvmB9ORxE/zalo  */}
@@ -119,8 +119,8 @@ export const HomeSection: React.FC = () => {
 <div className={`avatar-container ${isLoaded ? "load" : ""}`}>
 <div className={`dot-pattern ${isLoaded ? "load" : ""}`}></div>
 <div id="introduce-avatar" className={`${isLoaded ? "load" : ""}`}>
-<img alt="avatar" />
-{/*  <img src="assets/images/avatar_dark.JPG" className="disable_img" alt="avatar" />  */}
+<img src={`${import.meta.env.BASE_URL}assets/images/avatar.jpeg`} alt="avatar" />
+{/*  <img src={`${import.meta.env.BASE_URL}assets/images/avatar_dark.JPG`} className="disable_img" alt="avatar" />  */}
 </div>
 </div>
 </div>
