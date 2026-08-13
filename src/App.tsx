@@ -16,6 +16,20 @@ function App() {
   const [isDark, setIsDark] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
+  const [isHeaderClosed, setIsHeaderClosed] = useState(false);
+
+  // Scroll to home on page load (F5)
+  useEffect(() => {
+    // Let the browser restore the previous scroll position first, 
+    // then smoothly scroll up to the top after a short delay to create the "lướt lên" effect.
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'auto'; // Default behavior
+    }
+    
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 500); // Increased delay slightly so the user sees where they were before scrolling up
+  }, []);
 
   // Effect to apply theme DOM updates whenever it changes
   useEffect(() => {
@@ -28,14 +42,37 @@ function App() {
     }, 50);
   }, [isDark]);
 
+  // Global event listener to track engagement (moved from jQuery to React to fix caching and synthetic event issues)
+  useEffect(() => {
+    const handleMouseDown = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      
+      // Do not count engagement for clicks on the header navigation
+      if (target.closest('#header')) {
+        return;
+      }
+
+      if (target.closest('a')) {
+        const globalGet = (window as any).GET;
+        if (typeof globalGet === 'function') {
+          globalGet('ENGAGEMENT', '#total-engagement', 1);
+        }
+      }
+    };
+    
+    document.addEventListener('mousedown', handleMouseDown);
+    return () => document.removeEventListener('mousedown', handleMouseDown);
+  }, []);
+
   const toggleTheme = () => setIsDark(!isDark);
+  const toggleHeader = () => setIsHeaderClosed(!isHeaderClosed);
 
   return (
     <div className="window-device">
-      <Header />
+      <Header isHeaderClosed={isHeaderClosed} />
       
       <div id="box-bar">
-          <div id="menu-bar">
+          <div id="menu-bar" onClick={toggleHeader}>
               <i className="fa-solid fa-bars"></i>
           </div>
   
@@ -51,11 +88,11 @@ function App() {
 
       <HomeSection />
       <AboutSection />
+      <CertificateSection />
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
       <ContactSection />
-      <CertificateSection />
       <Footer />
       
       {/* 

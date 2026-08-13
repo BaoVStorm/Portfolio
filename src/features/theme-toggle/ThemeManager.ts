@@ -28,16 +28,16 @@ const arr_theme = [
 
 const change_img_theme: Record<string, [string, string]> = {
     "#logo-header img": [
-        "/assets/logo/VS_logo.png",
-        "/assets/logo/VS_logo_dark.png"
+        `${import.meta.env.BASE_URL}assets/logo/VS_logo.png`,
+        `${import.meta.env.BASE_URL}assets/logo/VS_logo_dark.png`
     ],
     "#contact .logo-contact img": [
-        "/assets/logo/logo.png",
-        "/assets/logo/logo_dark.png"
+        `${import.meta.env.BASE_URL}assets/logo/logo.png`,
+        `${import.meta.env.BASE_URL}assets/logo/logo_dark.png`
     ],
     "#introduce-avatar img": [
-        "/assets/images/avatar.jpeg",
-        "/assets/images/avatar_dark.JPG"
+        `${import.meta.env.BASE_URL}assets/images/avatar_original_3.JPG`,
+        `${import.meta.env.BASE_URL}assets/images/avatar_dark.JPG`
     ]
 };
 

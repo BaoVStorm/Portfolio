@@ -47,7 +47,7 @@ export const ContactSection: React.FC = () => {
                         i'll be glad to answer your questions!
                     </div>
 <div className="logo-contact">
-<img alt="logo" src="assets/logo/logo.png"/>
+<img alt="logo" src={`${import.meta.env.BASE_URL}assets/logo/logo.png`}/>
 </div>
 <div className={`box2-contact ${isLoaded ? "load" : ""}`}>
 <div className="content-contact">
