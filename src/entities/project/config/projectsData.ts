@@ -9,7 +9,7 @@ export const projectsData: ProjectData[] = [
   {
       img: "assets/projects/bigplant_logo.png",
       title: "BigPlants - Production App",
-      des: "Team Project. A real-time plant scanner with an integrated LLM chatbot for Q&A. I handled the full app development and AI integration, while my teammate trained the image detection models.",
+      des: "Team Project - A real-time plant scanner with an integrated LLM chatbot for Q&A. I handled the full app development and AI integration, while my teammate trained the image detection models.",
       href: "https://big-plants-web-site.vercel.app/"
   },
   {
@@ -27,19 +27,19 @@ export const projectsData: ProjectData[] = [
   {
       img: "assets/projects/portfolio.png",
       title: "My Portfolio - Website",
-      des: "This is my personal project - a website to introduce myself with ReactJS. Additionally, it serves as a platform to showcase my skills and continuously improve them through practice.",
+      des: "My personal project - a website to introduce myself with ReactJS. Additionally, it serves as a platform to showcase my skills and continuously improve them through practice.",
       href: "https://github.com/BaoVStorm/Portfolio_React"
   },
   {
       img: "https://github.com/coconerd/iBeleaf/blob/main/public/images/favicon/plantEcommerce_padding.png?raw=true",
       title: "iBeleaf - Website",
-      des: "This is a team project with my homies at <i>COCONERD</i> - an eCommerce website designed to manage and sell plants, featuring a streamlined process and a user-friendly interface for a smooth shopping experience.",
+      des: "Team project with my homies at <i>COCONERD</i> - an eCommerce website designed to manage and sell plants, featuring a streamlined process and a user-friendly interface for a smooth shopping experience.",
       href: "https://github.com/coconerd/plant-ecommerce"
   },
   {
       img:  "assets/projects/uit.png",
       title: "UITeco - Desktop App",
-      des: "A team project with <i>COCONERD</i> - my best team in university. This project is about an app that serves not only as a forum but also as a bridge connecting teachers, alumni, and students.",
+      des: "Team project with <i>COCONERD</i> - my best team in university. This project is about an app that serves not only as a forum but also as a bridge connecting teachers, alumni, and students.",
       href: "https://github.com/coconerd/uiteco-swing"
   },
   {
@@ -51,13 +51,13 @@ export const projectsData: ProjectData[] = [
   {
       img: "assets/projects/datamining_bg.png",
       title: "LessIsMore - DataMining",
-      des: "A team project with <i>COCONERD</i> - this project focused on data mining for tomato pest and disease recognition using the MobileNet model. This lightweight model delivers impressive performance.",
+      des: "Team project with <i>COCONERD</i> - this project focused on data mining for tomato pest and disease recognition using the MobileNet model. This lightweight model delivers impressive performance.",
       href: "https://github.com/coconerd/LessIsMore_Tomato"
   },
-  {
-      img: "assets/projects/attack.png",
-      title: "Inversion Attack - Security",
-      des: "Inversion Attack is an attack technique in the field of security and machine learning, aimed at reconstructing the original data from the output or weights of an AI model.",
-      href: "https://github.com/BaoVStorm/InversionAttack"
-  }
+//   {
+//       img: "assets/projects/attack.png",
+//       title: "Inversion Attack - Security",
+//       des: "Inversion Attack is an attack technique in the field of security and machine learning, aimed at reconstructing the original data from the output or weights of an AI model.",
+//       href: "https://github.com/BaoVStorm/InversionAttack"
+//   }
 ];
