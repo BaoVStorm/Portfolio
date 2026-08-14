@@ -89,7 +89,9 @@
                     margin-top: 10px;
                     margin-bottom: 5px;
                     font-size: clamp(16px, 3.6vw, var(--head-font-size));
-                    min-height: clamp(5px, 10.2vw, 66px);;
+                    min-height: clamp(5px, 10.2vw, 66px);
+                    display: flex;
+                    align-items: center;
                     /* font-weight: 600; */
                 }
 

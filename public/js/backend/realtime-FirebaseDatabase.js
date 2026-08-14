@@ -174,15 +174,4 @@ async function updateCountAndHistory(key, newCount, maxHistory = 10) {
 }
 
 // -------------------------------
-// EVENT LISTENER — ENGAGEMENT
-// -------------------------------
-$(document).ready(() => {
-  $('a').on('mousedown', function (event) {
-    if ($(this).hasClass('preventEvent')) {
-      event.preventDefault();
-      return;
-    }
-
-    GET('ENGAGEMENT', '#total-engagement', 1);
-  });
-});
+// Event tracking moved to React (App.tsx) to avoid caching and React event bubbling issues.
