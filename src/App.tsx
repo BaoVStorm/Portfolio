@@ -53,9 +53,8 @@ function App() {
       }
 
       if (target.closest('a')) {
-        const globalGet = (window as any).GET;
-        if (typeof globalGet === 'function') {
-          globalGet('ENGAGEMENT', '#total-engagement', 1);
+        if (typeof window.GET === 'function') {
+          window.GET('ENGAGEMENT', '#total-engagement', 1);
         }
       }
     };
@@ -72,11 +71,11 @@ function App() {
       <Header isHeaderClosed={isHeaderClosed} />
       
       <div id="box-bar">
-          <div id="menu-bar" onClick={toggleHeader}>
+          <div id="menu-bar" onClick={toggleHeader} aria-label="Toggle Mobile Navigation Menu">
               <i className="fa-solid fa-bars"></i>
           </div>
   
-          <div id="dark-light-bar" className={isDark ? "switch-dark" : "switch-light"} onClick={toggleTheme}>
+          <div id="dark-light-bar" className={isDark ? "switch-dark" : "switch-light"} onClick={toggleTheme} aria-label="Toggle Dark/Light Theme">
               <div id="switch-padding">
                   <div id="switch-bar" className={isDark ? "switch-dark" : "switch-light"}>
                       <div id="switch-bar-dark"></div>
@@ -94,12 +93,6 @@ function App() {
       <ExperienceSection />
       <ContactSection />
       <Footer />
-      
-      {/* 
-      <div className="elementor-spacer-inner-background">
-          <div className="elementor-spacer-inner space2"></div>
-      </div> 
-      */}
     </div>
   );
 }

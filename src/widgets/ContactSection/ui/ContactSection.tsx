@@ -63,16 +63,16 @@ export const ContactSection: React.FC = () => {
 <div className="content-contact">
 <h3 className="head-content-contact">my social</h3>
 <div className="body-content-contact">
-<a href="https://www.facebook.com/VStorm.TVB" target="_blank">
+<a href="https://www.facebook.com/VStorm.TVB" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
 <i className="fa-brands fa-square-facebook"></i>
 </a>
-<a href="https://www.instagram.com/I_Dont_Have_Instagram:&gt;" target="_blank">
+<a href="https://www.instagram.com/I_Dont_Have_Instagram:&gt;" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
 <i className="fa-brands fa-square-instagram"></i>
 </a>
-<a href="https://github.com/BaoVStorm" target="_blank">
+<a href="https://github.com/BaoVStorm" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
 <i className="fa-brands fa-square-github"></i>
 </a>
-<a href="https://www.linkedin.com/in/tranvubao-vstorm/" target="_blank">
+<a href="https://www.linkedin.com/in/tranvubao-vstorm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
 <i className="fa-brands fa-linkedin"></i>
 </a>
 {/*  <a href="https://x.com/I_Dont_Have_X">
@@ -83,7 +83,7 @@ export const ContactSection: React.FC = () => {
 <div className="content-contact">
 <h3 className="head-content-contact">call me</h3>
 <div className="body-content-contact">
-<a href="https://join.skype.com/invite/qHxc9or0fsDI" target="_blank">
+<a href="https://join.skype.com/invite/qHxc9or0fsDI" target="_blank" rel="noopener noreferrer" aria-label="Skype Call">
 <i className="fa-brands fa-skype"></i>
 </a>
 </div>
