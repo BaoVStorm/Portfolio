@@ -7,12 +7,6 @@ export type ProjectData = {
 
 export const projectsData: ProjectData[] = [
   {
-      img: "assets/projects/bigplant_logo.png",
-      title: "BigPlants - Production App",
-      des: "Team Project. App nơi người dùng có thể scan thực vật realtime từ đó có thể biết được thông tin chi tiết về loài cây, Tích hợp model ChatBox LLM để hỏi các thông tin cơ bản. Tôi tham gia toàn bộ quá trình làm app + AI, người còn lại train models detect hình ảnh",
-      href: "https://big-plants-web-site.vercel.app/"
-  },
-  {
       img: "assets/projects/Astrolingo.png",
       title: "Astrolingo - Android App",
       des: "My personal project - A TOEIC preparation app offering practice tests, a rich vocabulary library, an AI chatbot, and fun mini games to help learners study English easily and effectively.",
