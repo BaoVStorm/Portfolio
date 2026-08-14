@@ -9,7 +9,7 @@ export const projectsData: ProjectData[] = [
   {
       img: "assets/projects/bigplant_logo.png",
       title: "BigPlants - Production App",
-      des: "Team Project. An application where users can scan plants in real-time to learn detailed information about them. Integrated with an LLM ChatBox model to answer basic questions. I was involved in the entire app development and AI integration process, while my teammate trained the image detection models.",
+      des: "Team Project. A real-time plant scanner with an integrated LLM chatbot for Q&A. I handled the full app development and AI integration, while my teammate trained the image detection models.",
       href: "https://big-plants-web-site.vercel.app/"
   },
   {
