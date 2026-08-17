@@ -16,7 +16,9 @@ function App() {
   const [isDark, setIsDark] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });
-  const [isHeaderClosed, setIsHeaderClosed] = useState(false);
+  const [isHeaderClosed, setIsHeaderClosed] = useState(() => {
+    return window.innerWidth <= 900;
+  });
 
   // Scroll to home on page load (F5)
   useEffect(() => {
@@ -65,7 +67,7 @@ function App() {
 
   return (
     <div className="window-device">
-      <Header isHeaderClosed={isHeaderClosed} />
+      <Header isHeaderClosed={isHeaderClosed} isDark={isDark} />
       
       <div id="box-bar">
           <div id="menu-bar" onClick={toggleHeader} aria-label="Toggle Mobile Navigation Menu">
