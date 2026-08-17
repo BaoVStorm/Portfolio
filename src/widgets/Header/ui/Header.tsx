@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 type HeaderProps = {
   isHeaderClosed?: boolean;
+  isDark?: boolean;
 };
 
-export const Header: React.FC<HeaderProps> = ({ isHeaderClosed = false }) => {
+export const Header: React.FC<HeaderProps> = ({ isHeaderClosed = false, isDark = false }) => {
   const [activeSection, setActiveSection] = useState<string>('home');
 
   useEffect(() => {
@@ -48,7 +49,7 @@ export const Header: React.FC<HeaderProps> = ({ isHeaderClosed = false }) => {
   };
 
   return (
-    <header id="header" className={isHeaderClosed ? 'close-header' : ''}>
+    <header id="header" className={`${isHeaderClosed ? 'close-header' : ''} ${isDark ? 'dark' : 'light'}`}>
       <div className="header-content" id="logo">
         <div className="subnemu">
           <div id="logo-header" onClick={(e) => scrollToSection(e as any, 'home')} style={{ cursor: 'pointer' }}>
