@@ -20,15 +20,12 @@ function App() {
 
   // Scroll to home on page load (F5)
   useEffect(() => {
-    // Let the browser restore the previous scroll position first, 
-    // then smoothly scroll up to the top after a short delay to create the "lướt lên" effect.
+    // Reset scroll position immediately on reload so we start from the top
+    // without triggering animations in the middle of the page first.
     if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'auto'; // Default behavior
+      history.scrollRestoration = 'manual';
     }
-    
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 500); // Increased delay slightly so the user sees where they were before scrolling up
+    window.scrollTo(0, 0);
   }, []);
 
   // Effect to apply theme DOM updates whenever it changes

@@ -60,9 +60,17 @@
     font-weight: 700;
     white-space: nowrap;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, color 0.5s ease;
     pointer-events: none;
     z-index: 20;
+}
+
+body.light .cert-title-item {
+    color: var(--text-color);
+}
+
+body.dark .cert-title-item {
+    color: #ffffff;
 }
 
 .certificate-container-gallery-item.active .cert-title-item {
@@ -91,21 +99,14 @@
 }
 
 /* Hide duplicates on desktop */
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1101px) {
     .duplicate-item {
         display: none !important;
     }
 }
 
-@media screen and (max-width: 1100px){
-    #certificate .certificate-container {
-        margin-left: 0px;
-        width: 90%;
-    }
-}
-
 /* optimize certificate for laptop/tablets */
-@media screen and (max-width: 1400px) and (min-width: 901px){
+@media screen and (max-width: 1400px) and (min-width: 1101px){
     .hover.certificate-container-gallery {
         gap: 0px;
     }
@@ -120,8 +121,9 @@
 }
 
 /* Mobile responsive - auto scrolling marquee */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     #certificate .certificate-container {
+        margin-left: 0px;
         width: 100%;
         padding: 40px 0;
         overflow: hidden;
