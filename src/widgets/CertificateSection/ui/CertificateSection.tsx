@@ -29,7 +29,7 @@ export const CertificateSection: React.FC = () => {
           <div className="cert-title-item">{cer.title}</div>
           <div className="cert-img-wrapper">
             <img 
-              src={`${import.meta.env.BASE_URL}${cer.image}`} 
+              src={cer.image} 
               alt={cer.title} 
               loading="eager" 
               decoding="async" 
