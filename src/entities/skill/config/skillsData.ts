@@ -1,8 +1,8 @@
-export const HIGH_PERCENT_SKILL = 88;
+export type SkillLevel = 1 | 2 | 3 | 4 | 5;
 
 export type SkillDetail = {
   name: string;
-  percent: number;
+  level: SkillLevel;
 };
 
 export type SkillCategory = {
@@ -13,47 +13,32 @@ export type SkillCategory = {
 
 export const skillsData: SkillCategory[] = [
   {
-    id: "programming-language",
-    title: "programming language",
+    id: "frontend",
+    title: "Frontend Development",
     skills: [
-      { name: "c, c++", percent: 92 },
-      { name: "html, css", percent: 88 },
-      { name: "javaScript, TypeScript", percent: 83 },
-      { name: "sql", percent: 86 },
-      { name: "python", percent: 82 },
-      { name: "java", percent: 75 },
-      { name: "php", percent: 76 },
-      { name: "C# With Unity - Game Dev", percent: 85 }
+      { name: "React.js & Next.js", level: 5 },
+      { name: "TypeScript / JavaScript", level: 5 },
+      { name: "Tailwind CSS & SCSS", level: 5 },
+      { name: "HTML5 & Web Standards", level: 4 }
     ]
   },
   {
-    id: "framework",
-    title: "Framework & Library",
+    id: "backend",
+    title: "Backend & Database",
     skills: [
-      { name: "Node.JS", percent: 83 },
-      { name: "React.JS", percent: 80 },
-      { name: "Redux", percent: 75 },
-      { name: "Tailwind CSS", percent: 76 },
-      { name: "JQuery", percent: 87 },
-      { name: "Laravel", percent: 75 }
+      { name: "Node.js & Express", level: 4 },
+      { name: "SQL (MySQL, PostgreSQL)", level: 4 },
+      { name: "REST API Architecture", level: 4 },
+      { name: "C / C++", level: 5 }
     ]
   },
   {
-    id: "soft-skill",
-    title: "soft skill",
+    id: "core-tools",
+    title: "Core Engineering",
     skills: [
-      { name: "creativity", percent: 87 },
-      { name: "flexibility", percent: 87 },
-      { name: "communication", percent: 69 }
-    ]
-  },
-  {
-    id: "hard-skill",
-    title: "hard skill",
-    skills: [
-      { name: "Data Structures & Algorithms", percent: 92 },
-      { name: "Math & Physics", percent: 97 },
-      { name: "Design & UI/UX", percent: 90 }
+      { name: "Data Structures & Algorithms", level: 5 },
+      { name: "Git & GitHub Workflow", level: 5 },
+      { name: "Problem Solving", level: 5 }
     ]
   }
 ];
