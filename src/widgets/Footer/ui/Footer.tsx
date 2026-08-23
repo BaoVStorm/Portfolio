@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             </p>      */}
 <p>
 <span>Latest Updates: </span>
-<span className="hightlight-footer"> 18. 08. 2026.</span>
+<span className="hightlight-footer"> 24. 08. 2026.</span>
 </p>
 </footer>
     </>
