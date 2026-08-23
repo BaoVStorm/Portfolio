@@ -120,9 +120,13 @@ body.dark .cert-title-item {
     width: auto;
 }
 
-/* Hide duplicates on desktop */
+/* Desktop Track styling */
 @media screen and (min-width: 1101px) {
-    .duplicate-item {
+    .certificate-track {
+        display: contents;
+    }
+
+    .duplicate-track {
         display: none !important;
     }
 }
@@ -158,8 +162,20 @@ body.dark .cert-title-item {
     .certificate-container-gallery {
         width: max-content;
         gap: 20px;
-        animation: marquee 20s linear infinite;
+        display: flex;
         justify-content: flex-start;
+        will-change: transform;
+        animation: marqueeContinuous 30s linear infinite;
+    }
+
+    .certificate-track {
+        display: flex;
+        gap: 20px;
+        flex-shrink: 0;
+    }
+
+    .duplicate-track {
+        display: flex !important;
     }
 
     .certificate-container-gallery:hover,
@@ -168,16 +184,35 @@ body.dark .cert-title-item {
     }
 
     .certificate-container-gallery-item {
-        flex: 0 0 300px !important;
-        height: 450px;
+        flex: 0 0 auto !important;
+        width: auto !important;
+        height: 380px;
+        margin: 0;
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    .cert-img-wrapper {
+        width: auto;
+        height: 100%;
+    }
+
+    .cert-img-wrapper img {
+        height: 100%;
+        width: auto;
+        display: block;
+        object-fit: contain;
+        pointer-events: none;
+        user-select: none;
     }
 
     .certificate-container-gallery.hover .certificate-container-gallery-item {
-        opacity: 0.6;
+        opacity: 0.6 !important;
     }
 
     .certificate-container-gallery.hover .certificate-container-gallery-item.active {
-        opacity: 1;
+        opacity: 1 !important;
     }
 
     .cert-title-item {
@@ -186,11 +221,17 @@ body.dark .cert-title-item {
     }
 }
 
-@keyframes marquee {
+@media screen and (max-width: 600px) {
+    .certificate-container-gallery-item {
+        height: 260px;
+    }
+}
+
+@keyframes marqueeContinuous {
     0% {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translateX(calc(-50% - 10px));
+        transform: translate3d(calc(-50% - 10px), 0, 0);
     }
 }

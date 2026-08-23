@@ -50,6 +50,11 @@ function nowIsoVN() {
 // GET: Lấy dữ liệu (GET)
 // -------------------------------
 function GET(key, selector, increment) {
+  if (window.VITE_MODE === 'localdev') {
+    $(selector).text('local');
+    return;
+  }
+
   fetch(dbUrl(key))
     .then(response => {
       if (!response.ok) {
