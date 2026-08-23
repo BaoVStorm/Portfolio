@@ -32,6 +32,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Update Latest Updates Date
+        run: |
+          export TZ="Asia/Ho_Chi_Minh"
+          CURRENT_DATE=$(date +'%d. %m. %Y.')
+          sed -i -E "s/<span className=\"hightlight-footer\"> ?[0-9]{1,2}\. [0-9]{1,2}\. [0-9]{4}\.<\/span>/<span className=\"hightlight-footer\"> $CURRENT_DATE<\/span>/g" src/widgets/Footer/ui/Footer.tsx
+
       - name: Build
         run: npm run build
         env:
