@@ -164,21 +164,22 @@ body.dark .cert-title-item {
         gap: 20px;
         display: flex;
         justify-content: flex-start;
+        will-change: transform;
+        animation: marqueeContinuous 30s linear infinite;
     }
 
     .certificate-track {
         display: flex;
         gap: 20px;
         flex-shrink: 0;
-        animation: scrollMarquee 35s linear infinite;
     }
 
     .duplicate-track {
         display: flex !important;
     }
 
-    .certificate-container-gallery:hover .certificate-track,
-    .certificate-container-gallery:active .certificate-track {
+    .certificate-container-gallery:hover,
+    .certificate-container-gallery:active {
         animation-play-state: paused;
     }
 
@@ -202,6 +203,8 @@ body.dark .cert-title-item {
         width: auto;
         display: block;
         object-fit: contain;
+        pointer-events: none;
+        user-select: none;
     }
 
     .certificate-container-gallery.hover .certificate-container-gallery-item {
@@ -224,11 +227,11 @@ body.dark .cert-title-item {
     }
 }
 
-@keyframes scrollMarquee {
+@keyframes marqueeContinuous {
     0% {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translateX(calc(-100% - 20px));
+        transform: translate3d(calc(-50% - 10px), 0, 0);
     }
 }
